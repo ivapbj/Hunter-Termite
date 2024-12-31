@@ -1,9 +1,35 @@
 import React from "react";
+import HunterLogo from "../assets/Hunterlogo.jpg";
+import LogImage from "../assets/logimage.jpg";
+import { FaInstagram } from "react-icons/fa";
+import "./Header.css"; // Import the CSS file
 
 function Header() {
   return (
-    <header>
-      <h1>My Website</h1>
+    <header className="header">
+      {/* Left Section: Logo and Instagram Icon */}
+      <div className="header-left">
+        <img src={HunterLogo} alt="Hunter Website Logo" className="logo" />
+
+        <a
+          href="https://www.instagram.com/huntertermite/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="instagram-link"
+        >
+          <FaInstagram />
+        </a>
+      </div>
+
+      {/* Right Section: Button */}
+      <div className="header-right">
+        <a
+          href="/quote" // Change this to your quote page or link
+          className="quote-button"
+        >
+          GET A FREE QUOTE
+        </a>
+      </div>
     </header>
   );
 }

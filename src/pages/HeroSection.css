@@ -1,0 +1,41 @@
+/* Apply styles to the hero section */
+.hero-section {
+  position: relative;
+  height: 100vh; /* Full viewport height */
+  width: 100%; /* Full width */
+  background-image: url("../assets/herosectionimage.jpg");
+  background-size: cover; /* Make the image cover the entire container */
+  background-position: center; /* Center the background image */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+}
+
+/* Style the text inside the hero section */
+.hero-section h2 {
+  font-size: 3rem; /* Default font size for large screens */
+  font-weight: bold;
+  margin-top: 450px;
+  color: rgb(38, 16, 0);
+  z-index: 1; /* Ensure the text is above the background image */
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  .hero-section {
+    background-position: top center; /* Adjust the background position for mobile */
+  }
+
+  .hero-section h2 {
+    font-size: 2rem; /* Smaller font size for mobile */
+    padding: 0 20px; /* Add padding for better spacing on smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-section h2 {
+    font-size: 1.5rem; /* Even smaller font size for very small screens */
+  }
+}

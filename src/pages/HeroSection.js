@@ -1,12 +1,12 @@
 import React from "react";
+import "./HeroSection.css"; // Make sure to import the CSS file
 
-function HeroSection() {
+const HeroSection = () => {
   return (
-    <section>
-      <h2>Welcome!</h2>
-      <p>This is the hero section</p>
+    <section className="hero-section">
+      <h2>We Keep the Outside, Outside!</h2>
     </section>
   );
-}
+};
 
 export default HeroSection;
