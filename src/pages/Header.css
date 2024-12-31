@@ -30,7 +30,19 @@
   font-size: 32px;
   text-decoration: none;
 }
-
+.slogan {
+  font-size: 3rem; /* Default font size for large screens */
+  font-weight: bold;
+  color: rgb(255, 255, 255);
+  z-index: 1; /* Ensure the text is above the background image */
+}
+.subtext {
+  font-size: 1.5rem; /* Default font size for large screens */
+  font: Garamond, serif;
+  font-weight: bold;
+  color: rgb(255, 255, 255);
+  z-index: 1; /* Ensure the text is above the background image */
+}
 /* Right Section: Quote Button */
 .header-right {
   z-index: 1; /* Ensure it stays on top of the background */

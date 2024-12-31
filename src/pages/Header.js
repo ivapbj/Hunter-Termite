@@ -20,6 +20,10 @@ function Header() {
           <FaInstagram />
         </a>
       </div>
+      <h2 className="slogan">We Keep the Outside, Outside!</h2>
+      <h3 className="subtext">
+        Over 25 years of Exterminating in Wood Destroying Insects
+      </h3>
 
       {/* Right Section: Button */}
       <div className="header-right">

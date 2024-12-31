@@ -2,44 +2,37 @@
 .footer {
   position: relative;
   display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  height: 200px; /* Adjust height as necessary */
+  justify-content: center; /* Centers content horizontally */
+  align-items: center; /* Centers content vertically */
+  flex-direction: column; /* Stacks items vertically */
+  height: 100px; /* Adjust height as necessary */
   background-image: url("../assets/logimage.jpg");
   background-size: cover;
   background-position: center;
   color: white;
-  padding: 20px;
+  padding: 50px;
+  margin-top: 300px;
 }
 
-/* Right-side container for Call/Text, phone number, and Instagram icon */
-.footer-texts {
+/* Container for images, aligned in a row and centered */
+.footer-images {
   display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-  justify-content: flex-start;
-  text-align: right;
-  color: #ffffff; /* Yellow text color */
-  margin-left: auto;
+  justify-content: center; /* Centers the images horizontally */
+  align-items: center; /* Centers the images vertically */
+  gap: 20px; /* Adjust the gap between images */
+  margin-top: 10px; /* Adjust to push images towards the top */
 }
+
+/* Individual image styles */
+
+
 
 .footer-texts p {
   margin: 0;
   padding: 0;
 }
 
-.footer-phone {
-  margin: 5px 0;
-}
 
-.footer-phone a {
-  color: #fffffe; 
-  text-decoration: none;
-  font-size: 24px;
-  font-weight: bold;
-  margin-right: 50px ;
-
-}
 
 .instagram-link {
   margin-top: 50px;
@@ -48,16 +41,15 @@
   margin-right: 10px;
 }
 
-
-
 .footer-copyright {
   font-size: 14px;
   margin: 10px 0;
-  margin-top: 160px;
+  margin-top: 100px;
 }
+
 .footer-powered-by {
   font-size: 14px;
-  margin: 0px ;
+  margin-left: 50px ;
 }
 
 /* Mobile responsiveness */
@@ -84,5 +76,11 @@
 
   .instagram-link {
     font-size: 28px;
+  }
+
+  .footer-images {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px; /* Stack images vertically on mobile */
   }
 }
