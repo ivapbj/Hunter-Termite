@@ -6,8 +6,7 @@ import "./footer.css"; // Make sure to import the CSS
 function Footer() {
   return (
     <footer className="footer">
-      {/* Left Black Box */}
-      <div className="footer-left-box">
+      <div>
         <p className="footer-copyright">
           &copy; 2024 HUNTER TERMITE AND PEST MGMT
         </p>
@@ -16,15 +15,14 @@ function Footer() {
         </p>
       </div>
 
-      {/* Right Black Box */}
-      <div className="footer-right-box">
-        <div className="footer-texts">
-          <p className="footer-phone">
-            <a href="sms:+14132213065" className="text-button">
-              Call/Text (413) 221-3065
-            </a>
-          </p>
-        </div>
+      <div className="footer-texts">
+        <p className="footer-phone">
+          <a href="sms:+14132213065" className="text-button">
+            Call/Text (413) 221-3065
+          </a>
+        </p>
+      </div>
+      <div className="footer-instagram">
         <a
           href="https://www.instagram.com/huntertermite/"
           target="_blank"

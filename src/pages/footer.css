@@ -3,7 +3,7 @@
   position: relative;
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
   height: 200px; /* Adjust height as necessary */
   background-image: url("../assets/logimage.jpg");
   background-size: cover;
@@ -12,79 +12,74 @@
   padding: 20px;
 }
 
-/* Black box for text and icons on the right */
-.footer-right-box {
-  background-color: #000; /* Black background */
-  color: #FFD700; /* Yellow text color */
-  padding: 20px;
-  border-radius: 5px;
+/* Right-side container for Call/Text, phone number, and Instagram icon */
+.footer-texts {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
-  width: 40%; /* Takes 40% of the footer height */
-  height: 100%; /* Full height of the footer */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional shadow for styling */
+  align-items: flex-end;
+  justify-content: flex-start;
+  text-align: right;
+  color: #ffffff; /* Yellow text color */
+  margin-left: auto;
 }
 
-/* Footer text and icons styling inside the right box */
-.footer-texts {
-  margin-bottom: 10px;
+.footer-texts p {
+  margin: 0;
+  padding: 0;
 }
 
 .footer-phone {
-  margin: 10px 0;
-  font-size: 14px;
+  margin: 5px 0;
 }
 
 .footer-phone a {
-  color: #FFD700; /* Yellow text for the phone link */
+  color: #fffffe; 
   text-decoration: none;
+  font-size: 24px;
   font-weight: bold;
+  margin-right: 50px ;
+
 }
 
 .instagram-link {
-  color: #E1306C; /* Instagram pink color */
+  margin-top: 50px;
+  color: #ffffff; /* Instagram pink color */
   font-size: 32px;
-  margin-top: 10px;
+  margin-right: 10px;
 }
 
-/* Black box for copyright on the left */
-.footer-left-box {
-  background-color: #000; /* Black background */
-  color: #FFD700; /* Yellow text color */
-  padding: 20px;
-  border-radius: 5px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 50%; /* Takes 50% of the footer height */
-  height: 100%; /* Full height of the footer */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional shadow for styling */
-}
 
-.footer-copyright,
+
+.footer-copyright {
+  font-size: 14px;
+  margin: 10px 0;
+  margin-top: 160px;
+}
 .footer-powered-by {
   font-size: 14px;
+  margin: 0px ;
 }
 
 /* Mobile responsiveness */
 @media (max-width: 768px) {
   .footer {
-    flex-direction: column; /* Stack items vertically on smaller screens */
-    height: auto; /* Adjust height for smaller screens */
+    flex-direction: column;
+    height: auto;
+    align-items: center;
   }
 
-  .footer-left-box,
-  .footer-right-box {
-    width: 100%; /* Take full width on mobile */
-    height: auto; /* Adjust height for content */
-    margin-bottom: 10px; /* Add spacing between stacked boxes */
+  .footer div:first-child {
+    width: 100%;
+    text-align: center;
   }
 
-  .footer-copyright,
-  .footer-powered-by {
-    font-size: 12px; /* Adjust font size for smaller screens */
+  .footer-texts {
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer-phone a {
+    font-size: 14px;
   }
 
   .instagram-link {
