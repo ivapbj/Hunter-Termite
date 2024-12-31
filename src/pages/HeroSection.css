@@ -1,61 +1,20 @@
 /* Apply styles to the hero section */
 .hero-section {
-  position: relative;
-  height: 95vh; /* Full viewport height */
-  width: 100%; /* Full width */
+  position: relative; /* Ensures child elements use this as the positioning context */
+  height: 95vh;
+  width: 100%;
   background-image: url("../assets/herosectionimage.jpg");
-  background-size: cover; /* Make the image cover the entire container */
-  background-position: center; /* Center the background image */
+  background-size: cover;
+  background-position: center;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  flex-direction: column; /* Stack elements vertically */
+  justify-content: flex-end; /* Push elements to the bottom */
+  align-items: center; /* Center elements horizontally */
   text-align: center;
+  padding-bottom: 50px; /* Add space for the footer */
 }
 
-/* Style the text inside the hero section */
-.about-header {
-  font-size: 3rem; /* Default font size for large screens */
-  font-weight: bold;
-  margin-top: 1000px;
-  margin-left: 150px;
-  color: rgb(6, 6, 6);
-  z-index: 1; /* Ensure the text is above the background image */
-}
-.meet{
-  font-size: 2rem; /* Default font size for large screens */
-  font-weight: bold;
-  margin-left: 150px;
-  color: rgb(6, 6, 6);
-  z-index: 1; /* Ensure the text is above the background image */
-  margin-top: 100px;
-}
-.ant-image, .beetle-image, .capenter-image, .termite-image, .bee-image { 
-  width: 100px;
-  height: 100px;
-  border-radius: 50%; /* Makes the images circular */
-  object-fit: cover; /* Ensures the image covers the area */
-  margin-top: 1100px;
-  /* justify-items: 10px; */
-  margin-left: 1rem;
 
-}
- /* .about-image { */
-  /* width: 200px;
-  height: 200px;
-  object-fit: cover; /* Ensures the image covers the area */
-  /* margin-top: 1250px; */ */
-  /* margin-left:200px;
- }   */
-.footer-phone a {
-  color: #000000; 
-  text-decoration: none;
-  text-align: right;
-  font-size: 24px;
-  font-weight: bold;
-  margin-left: 100px;
- 
-
-}
 
 /* Mobile responsiveness */
 @media (max-width: 768px) {
@@ -63,14 +22,21 @@
     background-position: top center; /* Adjust the background position for mobile */
   }
 
-  .hero-section h2 {
-    font-size: 2rem; /* Smaller font size for mobile */
-    padding: 0 20px; /* Add padding for better spacing on smaller screens */
+  .meet-pic {
+    font-size: 1.5rem; /* Smaller font size for mobile */
+  }
+
+  .footer-phone a {
+    font-size: 20px;
   }
 }
 
 @media (max-width: 480px) {
-  .hero-section h2 {
-    font-size: 1.5rem; /* Even smaller font size for very small screens */
+  .meet-pic {
+    font-size: 1.2rem; /* Even smaller font size for very small screens */
+  }
+
+  .footer-phone a {
+    font-size: 18px;
   }
 }

@@ -41,7 +41,10 @@
   font: Garamond, serif;
   font-weight: bold;
   color: rgb(255, 255, 255);
+  margin-top: 100px;
+  text-align: center;
   z-index: 1; /* Ensure the text is above the background image */
+
 }
 /* Right Section: Quote Button */
 .header-right {

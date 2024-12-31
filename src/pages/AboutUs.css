@@ -1,27 +1,4 @@
-/* General styles for the About Section */
 .about-section {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  min-height: calc(100vh - 200px); /* Full viewport height minus footer height */
-  width: 100%;
-  color: white;
-  padding: 0px;
-  background-image: url("../assets/logimage.jpg"); /* Use the image as the background */
-  background-size: cover;
-  background-position: center;
-}
-
-.about-section h2 {
-  font-size: 2.5rem;
-  margin-bottom: 20px;
-  color: #FFD700; /* Yellow text color */
-}
-
-.about-section p {
   font-size: 1.2rem;
   line-height: 1.6;
   max-width: 800px;
@@ -29,14 +6,70 @@
   color: white;
 }
 
-/* Mobile responsiveness */
-@media (max-width: 768px) {
-  .about-section h2 {
-    font-size: 2rem;
-  }
-
-  .about-section p {
-    font-size: 1rem;
-  }
+/* Style for the Meet Mark Hunter section */
+.h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin: 20px 0;
+  position: absolute; /* Allow precise placement */
+  right: 165px; /* Position 10px from the right edge */
+  text-align: right; /* Align text to the right */
+  margin-top: -95px; /* Adjust margin for spacing */
+}
+.h2 {
+  font-size: 1.6rem;
+  font-weight: bold;
+  margin: 20px 0;
+  position: absolute; /* Allow precise placement */
+  right: 500px; /* Position 10px from the right edge */
+  text-align: center; /* Align text to the right */
+  margin-top: 20px; /* Adjust margin for spacing */
+}
+.blurb {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #000; /* Black text */
+    font-style: italic; /* Make all text italic */
+    line-height: 1.8; /* Add spacing between lines for readability */
+   margin: 20px 0;
+  margin-top: 60px;
+  position: absolute; /* Allow precise placement */
+  right: 500px; /* Position 10px from the right edge */
+  text-align: center; /* Align text to the right */
+}
+.about-image {
+  position: absolute; /* Allow precise placement */
+  z-index: 1;
+  right: 200px; /* Position 10px from the right edge */
+  margin: 0px 0; /* Add vertical spacing */
+  margin-top: -10px; /* Adjust margin for spacing */
 }
 
+.phone {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #000; /* Black text */
+  margin: 20px 0;
+  margin-top: -55px;
+  position: absolute; /* Allow precise placement */
+  right: 190px; /* Position 10px from the right edge */
+  text-align: right; /* Align text to the right */
+}
+
+/* Style the insect images */
+.ant-image, .beetle-image, .carpenter-image, .termite-image, .bee-image {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%; /* Makes the images circular */
+  object-fit: cover; /* Ensures the image covers the area */
+  margin: 30px; /* Adjust margin for spacing */
+  margin-top: 125px;
+}
+
+/* Center the insect images */
+.insect-container {
+  display: flex; /* Use flexbox for alignment */
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  height: 20vh; /* Full viewport height to center vertically */
+}
