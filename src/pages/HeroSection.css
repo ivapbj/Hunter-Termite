@@ -1,42 +1,42 @@
 /* Apply styles to the hero section */
 .hero-section {
-  position: relative; /* Ensures child elements use this as the positioning context */
+  position: relative;
   height: 95vh;
   width: 100%;
   background-image: url("../assets/herosectionimage.jpg");
   background-size: cover;
   background-position: center;
   display: flex;
-  flex-direction: column; /* Stack elements vertically */
-  justify-content: flex-end; /* Push elements to the bottom */
-  align-items: center; /* Center elements horizontally */
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
   text-align: center;
-  padding-bottom: 50px; /* Add space for the footer */
+  padding-bottom: 50px;
+  color: white; /* Added text color for better visibility */
 }
-
 
 
 /* Mobile responsiveness */
 @media (max-width: 768px) {
   .hero-section {
-    background-position: top center; /* Adjust the background position for mobile */
+    background-position: top center;
   }
 
   .meet-pic {
-    font-size: 1.5rem; /* Smaller font size for mobile */
+    font-size: 1.5rem;
   }
 
-  .footer-phone a {
+    .footer-phone a {
     font-size: 20px;
   }
 }
 
 @media (max-width: 480px) {
-  .meet-pic {
-    font-size: 1.2rem; /* Even smaller font size for very small screens */
+    .meet-pic {
+    font-size: 1.2rem;
   }
 
-  .footer-phone a {
+   .footer-phone a {
     font-size: 18px;
   }
 }

@@ -1,75 +1,153 @@
-.about-section {
-  font-size: 1.2rem;
-  line-height: 1.6;
-  max-width: 800px;
-  margin: 0 auto;
-  color: white;
+
+
+.about-content {
+  display: flex; /* Flex container for main content */
+  flex-wrap: wrap; /* Allow wrapping for smaller screens */
+  justify-content: center;
+  align-items: center;
+  gap: 20px; /* Gap between elements */
+}
+
+.about-text-container {
+  flex: 1;
+  min-width: 300px; /* Minimum width of text container to avoid squishing */
+  text-align: center;
+  /* Removes the previous absolute positioning */
 }
 
 /* Style for the Meet Mark Hunter section */
 .h1 {
   font-size: 2rem;
   font-weight: 700;
-  margin: 20px 0;
-  position: absolute; /* Allow precise placement */
-  right: 165px; /* Position 10px from the right edge */
-  text-align: right; /* Align text to the right */
-  margin-top: -95px; /* Adjust margin for spacing */
+  margin: 10px 0;
 }
+
+.h3 {
+  font-size: 1.6rem;
+  font-weight: normal;
+  margin: 10px 0;
+}
+
 .h2 {
   font-size: 1.6rem;
   font-weight: bold;
-  margin: 20px 0;
-  position: absolute; /* Allow precise placement */
-  right: 500px; /* Position 10px from the right edge */
-  text-align: center; /* Align text to the right */
-  margin-top: 20px; /* Adjust margin for spacing */
+  margin: 10px 0;
 }
+
 .blurb {
   font-size: 1.2rem;
   font-weight: 700;
-  color: #000; /* Black text */
-    font-style: italic; /* Make all text italic */
-    line-height: 1.8; /* Add spacing between lines for readability */
-   margin: 20px 0;
-  margin-top: 60px;
-  position: absolute; /* Allow precise placement */
-  right: 500px; /* Position 10px from the right edge */
-  text-align: center; /* Align text to the right */
+  color: #000;
+  font-style: italic;
+  line-height: 1.8;
+  margin: 10px 0;
 }
+
 .about-image {
-  position: absolute; /* Allow precise placement */
-  z-index: 1;
-  right: 200px; /* Position 10px from the right edge */
-  margin: 0px 0; /* Add vertical spacing */
-  margin-top: -10px; /* Adjust margin for spacing */
+  max-width: 300px;
+  height: auto;
+  margin: 10px 0;
 }
 
 .phone {
   font-size: 1.2rem;
   font-weight: 700;
-  color: #000; /* Black text */
-  margin: 20px 0;
-  margin-top: -55px;
-  position: absolute; /* Allow precise placement */
-  right: 190px; /* Position 10px from the right edge */
-  text-align: right; /* Align text to the right */
+  color: #000;
+  margin: 10px 0;
 }
 
 /* Style the insect images */
+.insect-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  flex-wrap: wrap;
+}
+.insect-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+  }
+.insect-label {
+    text-align: center;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #333;
+  }
+
 .ant-image, .beetle-image, .carpenter-image, .termite-image, .bee-image {
   width: 100px;
   height: 100px;
-  border-radius: 50%; /* Makes the images circular */
-  object-fit: cover; /* Ensures the image covers the area */
-  margin: 30px; /* Adjust margin for spacing */
-  margin-top: 125px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin: 10px; /* Adjust margin for more spacing */
 }
 
-/* Center the insect images */
-.insect-container {
-  display: flex; /* Use flexbox for alignment */
-  justify-content: center; /* Center horizontally */
-  align-items: center; /* Center vertically */
-  height: 20vh; /* Full viewport height to center vertically */
+/* Responsive styles */
+@media (max-width: 768px) {
+  .about-section{
+    padding: 20px;
+  }
+  .about-content{
+      flex-direction: column;
+  }
+  .about-text-container{
+    min-width: auto;
+  }
+  .h1 {
+    font-size: 1.8rem;
+  }
+
+  .h3 {
+    font-size: 1.4rem;
+  }
+
+  .h2 {
+    font-size: 1.4rem;
+  }
+
+  .blurb {
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+
+  .about-image {
+    max-width: 100%;
+  }
+
+  .phone {
+    font-size: 1rem;
+  }
+
+  .ant-image, .beetle-image, .carpenter-image, .termite-image, .bee-image {
+    width: 80px;
+    height: 80px;
+  }
+
+}
+
+@media (max-width: 480px) {
+  .h1 {
+    font-size: 1.5rem;
+  }
+
+  .h3 {
+    font-size: 1.2rem;
+  }
+
+  .h2 {
+    font-size: 1.2rem;
+  }
+
+  .blurb {
+    font-size: 0.9rem;
+    line-height: 1.4;
+  }
+
+  .ant-image, .beetle-image, .carpenter-image, .termite-image, .bee-image {
+    width: 70px;
+    height: 70px;
+  }
 }

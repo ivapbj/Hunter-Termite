@@ -30,22 +30,24 @@
   font-size: 32px;
   text-decoration: none;
 }
+
 .slogan {
   font-size: 3rem; /* Default font size for large screens */
   font-weight: bold;
   color: rgb(255, 255, 255);
   z-index: 1; /* Ensure the text is above the background image */
 }
+
 .subtext {
   font-size: 1.5rem; /* Default font size for large screens */
-  font: Garamond, serif;
+  font-family: Garamond, serif;
   font-weight: bold;
   color: rgb(255, 255, 255);
   margin-top: 100px;
   text-align: center;
   z-index: 1; /* Ensure the text is above the background image */
-
 }
+
 /* Right Section: Quote Button */
 .header-right {
   z-index: 1; /* Ensure it stays on top of the background */
@@ -67,7 +69,10 @@
 /* Mobile responsiveness */
 @media (max-width: 768px) {
   .header {
-    height: 120px; /* Adjust height for smaller screens */
+    flex-direction: column; /* Stack content vertically */
+    align-items: center;
+    height: auto; /* Allow header height to adjust to content */
+    padding: 10px;
     background-position: top center; /* Adjust background position */
   }
 
@@ -75,8 +80,50 @@
     height: 80px; /* Reduce logo size for smaller screens */
   }
 
+  .slogan {
+    font-size: 2rem; /* Reduce slogan size for smaller screens */
+    text-align: center;
+  }
+
+  .subtext {
+    font-size: 1.2rem; /* Reduce subtext size */
+    margin-top: 10px;
+    text-align: center;
+  }
+
+  .header-left {
+    align-items: center; /* Center-align the logo and text */
+    margin-bottom: 10px;
+  }
+
+  .header-right {
+    margin-top: 10px; /* Add spacing below header left content */
+  }
+
   .quote-button {
     font-size: 14px; /* Make the button text smaller on mobile */
-    padding: 10px 105px;
+    padding: 10px 20px;
+    width: 90%; /* Make button full-width */
+    text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .slogan {
+    font-size: 1.8rem; /* Further reduce slogan size for small devices */
+  }
+
+  .subtext {
+    font-size: 1rem; /* Adjust for smaller screens */
+  }
+
+  .logo {
+    height: 60px; /* Reduce logo size further */
+  }
+
+  .quote-button {
+    padding: 8px 16px; /* Adjust button padding */
+    font-size: 12px; /* Reduce button font size */
+    width: 100%; /* Make button full width on small screens */
   }
 }

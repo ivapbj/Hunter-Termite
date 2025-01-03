@@ -11,18 +11,33 @@ function AboutSection() {
     <section>
       <h2 className="h2">
         <i>
-          {" "}
           Our specialist has over 25 years' experience in exterminating wood
           destroying insects
         </i>
       </h2>
       <div className="insect-container">
-        <img src={CarpenterBee} alt="Carpenter Bee" className="bee-image" />
-        <img src={TermiteImage} alt="Termite" className="termite-image" />
-        <img src={CarpenterAnt} alt="Carpenter Ant" className="ant-image" />
-        <img src={BeetleImage} alt="Beetle" className="beetle-image" />
+        <div className="insect-item">
+          <p className="insect-label">CARPENTER BEES</p>
+          <img src={CarpenterBee} alt="Carpenter Bee" className="bee-image" />
+        </div>
+        <div className="insect-item">
+          <p className="insect-label">TERMITES</p>
+          <img src={TermiteImage} alt="Termite" className="termite-image" />
+        </div>
+        <div className="insect-item">
+          <p className="insect-label">CARPENTER ANTS</p>
+          <img src={CarpenterAnt} alt="Carpenter Ant" className="ant-image" />
+        </div>
+        <div className="insect-item">
+          <p className="insect-label">POWDER POST BEETLES</p>
+          <img src={BeetleImage} alt="Beetle" className="beetle-image" />
+        </div>
       </div>
-      <h1 className="h1"> Meet Mark Hunter</h1>
+      <h1 className="h1">Mark Hunter</h1>
+      <h3 className="h3">
+        <i>Owner</i>
+      </h3>
+      <img src={AboutImage} alt="Markpic" className="about-image" />
       <p className="blurb">
         <i>
           "West Springfield-based Hunter Termite and Pest Management has opened
@@ -49,9 +64,9 @@ function AboutSection() {
         <br />
         <i> ~ citylifestyle.com</i>
       </p>
-
-      <img src={AboutImage} alt="Markpic" className="about-image" />
-      <div className="phone">Call/Text (413) 221-3065</div>
+      <a href="sms:+14132213065" className="phone">
+        Call/Text (413) 221-3065
+      </a>
     </section>
   );
 }

@@ -1,6 +1,6 @@
 import React from "react";
 import HunterLogo from "../assets/Hunterlogo.jpg";
-import LogImage from "../assets/logimage.jpg";
+// import LogImage from "../assets/logimage.jpg";
 import { FaInstagram } from "react-icons/fa";
 import "./Header.css"; // Import the CSS file
 

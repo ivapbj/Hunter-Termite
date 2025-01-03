@@ -24,15 +24,18 @@
 }
 
 /* Individual image styles */
+.footer-images img {
+  width: 50px; /* Set default size for footer images */
+  height: 50px;
+  object-fit: cover;
+  border-radius: 50%; /* Circular images */
+}
 
-
-
+/* Footer text styles */
 .footer-texts p {
   margin: 0;
   padding: 0;
 }
-
-
 
 .instagram-link {
   margin-top: 50px;
@@ -49,20 +52,28 @@
 
 .footer-powered-by {
   font-size: 14px;
-  margin-left: 50px ;
+  margin-left: 50px;
 }
 
 /* Mobile responsiveness */
 @media (max-width: 768px) {
   .footer {
-    flex-direction: column;
-    height: auto;
-    align-items: center;
+    flex-direction: column; /* Stack footer items */
+    height: auto; /* Adjust height to content */
+    align-items: center; /* Center-align on mobile */
+    padding: 20px; /* Reduce padding for smaller screens */
+    margin-top: 150px; /* Adjust top margin for spacing */
   }
 
-  .footer div:first-child {
-    width: 100%;
-    text-align: center;
+  .footer-images {
+    flex-direction: column; /* Stack images vertically */
+    align-items: center;
+    gap: 10px; /* Reduce gap between stacked images */
+  }
+
+  .footer-images img {
+    width: 40px; /* Reduce image size for smaller screens */
+    height: 40px;
   }
 
   .footer-texts {
@@ -70,17 +81,40 @@
     text-align: center;
   }
 
-  .footer-phone a {
-    font-size: 14px;
+  .instagram-link {
+    font-size: 28px; /* Reduce size for mobile */
+    margin: 20px 0; /* Add vertical spacing */
+  }
+
+  .footer-copyright {
+    font-size: 12px; /* Reduce font size for smaller screens */
+  }
+
+  .footer-powered-by {
+    font-size: 12px; /* Reduce font size */
+    margin-left: 0; /* Center-align for mobile */
+    text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer {
+    padding: 10px; /* Further reduce padding for smaller screens */
+    margin-top: 100px; /* Adjust for very small devices */
+  }
+
+  .footer-images img {
+    width: 30px; /* Smaller image size for very small screens */
+    height: 30px;
   }
 
   .instagram-link {
-    font-size: 28px;
+    font-size: 24px; /* Adjust font size */
   }
 
-  .footer-images {
-    flex-direction: column;
-    align-items: center;
-    gap: 10px; /* Stack images vertically on mobile */
+  .footer-copyright,
+  .footer-powered-by {
+    font-size: 10px; /* Further reduce font size */
+    text-align: center;
   }
 }
