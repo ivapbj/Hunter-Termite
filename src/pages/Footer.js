@@ -1,5 +1,6 @@
 import React from "react";
 import { FaInstagram } from "react-icons/fa";
+import { FaFacebook } from "react-icons/fa";
 
 import "./footer.css"; // Make sure to import the CSS
 
@@ -14,6 +15,14 @@ function Footer() {
           className="instagram-link"
         >
           <FaInstagram />
+        </a>
+        <a
+          href="https://www.facebook.com/profile.php?id=61571092454405"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="facebook-link"
+        >
+          <FaFacebook />
         </a>
       </div>
       <div>

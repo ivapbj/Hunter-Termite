@@ -1,6 +1,4 @@
-
-
-.about-content {
+/* .about-content {
   display: flex; /* Flex container for main content */
   flex-wrap: wrap; /* Allow wrapping for smaller screens */
   justify-content: center;
@@ -19,7 +17,7 @@
 .h1 {
   font-size: 2rem;
   font-weight: 700;
-  margin: 10px 0;
+  margin: 0px ;
 }
 
 .h3 {
@@ -32,6 +30,8 @@
   font-size: 1.6rem;
   font-weight: bold;
   margin: 10px 0;
+  margin-top: 300px;
+
 }
 
 .blurb {
@@ -54,35 +54,6 @@
   font-weight: 700;
   color: #000;
   margin: 10px 0;
-}
-
-/* Style the insect images */
-.insect-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 20px;
-  flex-wrap: wrap;
-}
-.insect-item {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 10px;
-  }
-.insect-label {
-    text-align: center;
-    margin-bottom: 5px;
-    font-weight: bold;
-    color: #333;
-  }
-
-.ant-image, .beetle-image, .carpenter-image, .termite-image, .bee-image {
-  width: 100px;
-  height: 100px;
-  border-radius: 50%;
-  object-fit: cover;
-  margin: 10px; /* Adjust margin for more spacing */
 }
 
 /* Responsive styles */
@@ -121,13 +92,7 @@
     font-size: 1rem;
   }
 
-  .ant-image, .beetle-image, .carpenter-image, .termite-image, .bee-image {
-    width: 80px;
-    height: 80px;
-  }
-
 }
-
 @media (max-width: 480px) {
   .h1 {
     font-size: 1.5rem;
@@ -146,8 +111,4 @@
     line-height: 1.4;
   }
 
-  .ant-image, .beetle-image, .carpenter-image, .termite-image, .bee-image {
-    width: 70px;
-    height: 70px;
-  }
-}
+} */

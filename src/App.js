@@ -1,17 +1,17 @@
 import React from "react";
-import Header from "./pages/Header";
+// import Header from "./pages/Header";
 import HeroSection from "./pages/HeroSection";
-import AboutSection from "./pages/AboutSection";
+// import AboutSection from "./pages/AboutSection";
 
 import Footer from "./pages/Footer";
 
 function App() {
   return (
     <>
-      <Header />
+      {/* <Header /> */}
       <main>
         <HeroSection />
-        <AboutSection />
+        {/* <AboutSection /> */}
       </main>
       <Footer />
     </>

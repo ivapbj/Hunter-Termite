@@ -3,40 +3,215 @@
   position: relative;
   height: 95vh;
   width: 100%;
-  background-image: url("../assets/herosectionimage.jpg");
+  background-image: url("../assets/Herosectionimage.jpg");
   background-size: cover;
   background-position: center;
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
+  justify-content: flex-start; /* Align items from the top */
   align-items: center;
   text-align: center;
-  padding-bottom: 50px;
-  color: white; /* Added text color for better visibility */
+  padding-top: 150px; /* Create space at the top */
+  color: rgb(0, 0, 0); /* Added text color for better visibility */
+}
+
+.quote-button {
+  position: absolute; /* Positioning for top-right placement */
+  top: 100px; /* Distance from the top of the page */
+  right: 325px; /* Distance from the right of the page */
+  display: inline-block;
+  background-color: #FFD700;
+  color: #000;
+  padding: 20px 30px; /* Larger padding for a bigger button */
+  border-radius: 0; /* Removes rounded ends */
+  font-size: 18px; /* Slightly larger font size */
+  font-weight: bold;
+  text-decoration: none;
+  text-align: center;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Optional: subtle shadow */
+}
+
+.slogan {
+  font-size: 3rem; /* Adjusted font size */
+  font-weight: bold; /* Added font weight */
+  margin-top: 800px; /* Add spacing between button and slogan */
+  margin-bottom: 0px; /* Ensure proper spacing between slogan and insect images */
+  background-color: #5C4033; /* Dark brown color */
+  color: #FFF; /* White text color */
+  text-align: center;
+  padding: 10px 0; /* Add padding for better spacing inside the bar */
+  width: 100%; /* Ensures it spans the full width */
+  box-sizing: border-box; /* Ensures padding doesn't affect width */
+}
+
+/* Style the insect images */
+.insect-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px; /* Add spacing between slogan and insect images */
+  flex-wrap: wrap;
+}
+
+.insect-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10px;
+  border: 2px solid #5C4033; /* Dark brown border */
+  border-radius: 10px; /* Optional: rounded corners */
+  padding: 15px; /* Add padding inside the border */
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Optional: subtle shadow */
+  background-color: #FFF; /* Optional: light background for contrast */
+}
+
+.insect-label {
+  text-align: center;
+  margin-top: 10px;
+  font-weight: bold;
+  color: #333;
+}
+
+.insect-help-link {
+  margin-top: 5px; /* Space between label and link */
+  font-size: 1.4rem; /* Slightly smaller font size */
+  color: #5C4033; /* Match the dark brown color */
+  text-decoration: none;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  gap: 5px; /* Space between text and arrow */
+}
+
+.insect-help-link:hover {
+  text-decoration: underline; /* Add underline on hover */
+  color: #000; /* Change color on hover */
+}
+
+.insect-help-link svg {
+  font-size: 1rem; /* Arrow size */
 }
 
 
-/* Mobile responsiveness */
+.carpenter-image, .beetle-image, .termite-image, .bee-image {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin: 10px; /* Adjust margin for spacing */
+}
+
+.about-content {
+  display: flex; /* Flex container for main content */
+  flex-wrap: wrap; /* Allow wrapping for smaller screens */
+  justify-content: center;
+  align-items: center;
+  gap: 20px; /* Gap between elements */
+}
+
+.about-text-container {
+  flex: 1;
+  min-width: 300px; /* Minimum width of text container to avoid squishing */
+  text-align: center;
+  /* Removes the previous absolute positioning */
+}
+
+/* Style for the Meet Mark Hunter section */
+.h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin: 0px ;
+}
+
+.h3 {
+  font-size: 1.6rem;
+  font-weight: normal;
+  margin: 10px 0;
+}
+
+.h2 {
+  font-size: 1.6rem;
+  font-weight: bold;
+  margin: 10px 0;
+  margin-top: 20px;
+
+}
+
+.blurb {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #000;
+  font-style: italic;
+  line-height: 1.8;
+  margin: 10px 0;
+}
+
+.about-image {
+  max-width: 300px;
+  height: auto;
+  margin: 0px 0;
+}
+
+.phone {
+  font-size:2rem;
+  font-weight: 700;
+  color: #000;
+  margin: 10px 0;
+}
+
+/* Responsive styles */
 @media (max-width: 768px) {
-  .hero-section {
-    background-position: top center;
+  .about-section{
+    padding: 20px;
+  }
+  .about-content{
+      flex-direction: column;
+  }
+  .about-text-container{
+    min-width: auto;
+  }
+  .h1 {
+    font-size: 1.8rem;
   }
 
-  .meet-pic {
+  .h3 {
+    font-size: 1.4rem;
+  }
+
+  .h2 {
+    font-size: 1.4rem;
+  }
+
+  .blurb {
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+
+  .about-image {
+    max-width: 100%;
+  }
+
+  .phone {
+    font-size: 1rem;
+  }
+
+}
+@media (max-width: 480px) {
+  .h1 {
     font-size: 1.5rem;
   }
 
-    .footer-phone a {
-    font-size: 20px;
-  }
-}
-
-@media (max-width: 480px) {
-    .meet-pic {
+  .h3 {
     font-size: 1.2rem;
   }
 
-   .footer-phone a {
-    font-size: 18px;
+  .h2 {
+    font-size: 1.2rem;
   }
+
+  .blurb {
+    font-size: 0.9rem;
+    line-height: 1.4;
+  }
+
 }
