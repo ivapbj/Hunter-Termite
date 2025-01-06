@@ -1,6 +1,5 @@
-import React from "react";
+import React, { useState } from "react";
 import "./HeroSection.css";
-import { FaInstagram } from "react-icons/fa";
 import CarpenterAnt from "../assets/carpenterant.jpg";
 import BeetleImage from "../assets/powerbeetle.jpg";
 import TermiteImage from "../assets/termiteimage.jpg";
@@ -8,6 +7,45 @@ import CarpenterBee from "../assets/carpenterbee.jpg";
 import AboutImage from "../assets/AboutImage.png";
 
 const HeroSection = () => {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  const [formData, setFormData] = useState({
+    message: "",
+    phone: "",
+  });
+
+  // Handle the opening of the modal
+  const openModal = () => {
+    setIsModalOpen(true);
+  };
+
+  // Handle the closing of the modal
+  const closeModal = () => {
+    setIsModalOpen(false);
+  };
+
+  // Handle form input changes
+  const handleInputChange = (e) => {
+    const { id, value } = e.target;
+    setFormData((prevData) => ({
+      ...prevData,
+      [id]: value,
+    }));
+  };
+
+  // Handle form submission
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    const { message, phone } = formData;
+    const smsBody = encodeURIComponent(`Message: ${message}%0APhone: ${phone}`);
+    const smsLink = `sms:+14132213065?body=${smsBody}`;
+
+    // Open the SMS app with the pre-filled information
+    window.location.href = smsLink;
+
+    // Close the modal
+    closeModal();
+  };
+
   return (
     <div className="hero-section">
       {/* Slogan */}
@@ -22,37 +60,93 @@ const HeroSection = () => {
             className="carpenter-image"
           />
           <div className="insect-label">Carpenter Ants</div>
-          <a href="/help" className="insect-help-link">
+          <a
+            href="sms:+14132213065?body=Please%20text%20how%20we%20can%20help"
+            className="insect-help-link"
+          >
             Get Help <span>&rarr;</span>
           </a>
         </div>
         <div className="insect-item">
           <img src={BeetleImage} alt="Beetle" className="beetle-image" />
           <div className="insect-label">Powder Post Beetles</div>
-          <a href="/help" className="insect-help-link">
+          <a
+            href="sms:+14132213065?body=Please%20text%20how%20we%20can%20help"
+            className="insect-help-link"
+          >
             Get Help <span>&rarr;</span>
           </a>
         </div>
         <div className="insect-item">
           <img src={TermiteImage} alt="Termite" className="termite-image" />
           <div className="insect-label">Termites</div>
-          <a href="/help" className="insect-help-link">
+          <a
+            href="sms:+14132213065?body=Please%20text%20how%20we%20can%20help"
+            className="insect-help-link"
+          >
             Get Help <span>&rarr;</span>
           </a>
         </div>
         <div className="insect-item">
           <img src={CarpenterBee} alt="Bee" className="bee-image" />
           <div className="insect-label">Carpenter Bees</div>
-          <a href="/help" className="insect-help-link">
+          <a
+            href="sms:+14132213065?body=Please%20text%20how%20we%20can%20help"
+            className="insect-help-link"
+          >
             Get Help <span>&rarr;</span>
           </a>
         </div>
       </div>
 
       {/* Quote Button */}
-      <a href="/quote" className="quote-button">
+      <button onClick={openModal} className="quote-button">
         GET A FREE QUOTE
-      </a>
+      </button>
+
+      {/* Modal Form */}
+      {isModalOpen && (
+        <div className="modal">
+          <div className="modal-content">
+            <button onClick={closeModal} className="close-modal">
+              &times;
+            </button>
+            <h2>Please send a detailed message stating how we can help you.</h2>
+            <p>
+              Send a photo of the area that has pest damage along with the best
+              phone number to reach you at.
+            </p>
+
+            <form onSubmit={handleSubmit}>
+              <div className="form-group">
+                <label htmlFor="message">Message</label>
+                <textarea
+                  id="message"
+                  placeholder="Describe the issue here..."
+                  required
+                  value={formData.message}
+                  onChange={handleInputChange}
+                ></textarea>
+              </div>
+              <div className="form-group">
+                <label htmlFor="phone">Phone Number</label>
+                <input
+                  type="tel"
+                  id="phone"
+                  placeholder="Enter your phone number"
+                  required
+                  value={formData.phone}
+                  onChange={handleInputChange}
+                />
+              </div>
+              <button type="submit" className="submit-button">
+                Submit
+              </button>
+            </form>
+          </div>
+        </div>
+      )}
+
       <section>
         <h2 className="h2">
           <i>
