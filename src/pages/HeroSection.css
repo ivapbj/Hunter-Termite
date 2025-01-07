@@ -18,7 +18,7 @@
 .quote-button {
   position: absolute; /* Positioning for top-right placement */
   top: 100px; /* Distance from the top of the page */
-  right: 325px; /* Distance from the right of the page */
+  right: 0px; /* Distance from the right of the page */
   display: inline-block;
   background-color: #FFD700;
   color: #000;
