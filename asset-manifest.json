@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/static/css/main.81770ac6.css",
-    "main.js": "/static/js/main.2389891a.js",
-    "static/media/Herosectionimage.jpg": "/static/media/Herosectionimage.fc42ba3db92df5a887e8.jpg",
-    "static/media/powerbeetle.jpg": "/static/media/powerbeetle.7b15440186807c192e36.jpg",
-    "static/media/logimage.jpg": "/static/media/logimage.9c194e6ee5728fc1706e.jpg",
-    "static/media/carpenterant.jpg": "/static/media/carpenterant.4b03fcd5d758ace76395.jpg",
-    "static/media/carpenterbee.jpg": "/static/media/carpenterbee.0f2c3fc455fd94b867a2.jpg",
-    "static/media/termiteimage.jpg": "/static/media/termiteimage.39f106267f78b4aef79f.jpg",
-    "static/media/AboutImage.png": "/static/media/AboutImage.585ef5b9e0f3d40629a4.png",
-    "index.html": "/index.html",
-    "main.81770ac6.css.map": "/static/css/main.81770ac6.css.map",
-    "main.2389891a.js.map": "/static/js/main.2389891a.js.map"
+    "main.css": "/Hunter-Termite/static/css/main.7680c19e.css",
+    "main.js": "/Hunter-Termite/static/js/main.1f303d35.js",
+    "static/media/Herosectionimage.jpg": "/Hunter-Termite/static/media/Herosectionimage.fc42ba3db92df5a887e8.jpg",
+    "static/media/powerbeetle.jpg": "/Hunter-Termite/static/media/powerbeetle.7b15440186807c192e36.jpg",
+    "static/media/logimage.jpg": "/Hunter-Termite/static/media/logimage.9c194e6ee5728fc1706e.jpg",
+    "static/media/carpenterant.jpg": "/Hunter-Termite/static/media/carpenterant.4b03fcd5d758ace76395.jpg",
+    "static/media/carpenterbee.jpg": "/Hunter-Termite/static/media/carpenterbee.0f2c3fc455fd94b867a2.jpg",
+    "static/media/termiteimage.jpg": "/Hunter-Termite/static/media/termiteimage.39f106267f78b4aef79f.jpg",
+    "static/media/AboutImage.png": "/Hunter-Termite/static/media/AboutImage.585ef5b9e0f3d40629a4.png",
+    "index.html": "/Hunter-Termite/index.html",
+    "main.7680c19e.css.map": "/Hunter-Termite/static/css/main.7680c19e.css.map",
+    "main.1f303d35.js.map": "/Hunter-Termite/static/js/main.1f303d35.js.map"
   },
   "entrypoints": [
-    "static/css/main.81770ac6.css",
-    "static/js/main.2389891a.js"
+    "static/css/main.7680c19e.css",
+    "static/js/main.1f303d35.js"
   ]
 }
