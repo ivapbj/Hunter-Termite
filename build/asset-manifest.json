@@ -1,21 +1,20 @@
 {
   "files": {
-    "main.css": "/static/css/main.d0183a4d.css",
-    "main.js": "/static/js/main.9ddb93b7.js",
+    "main.css": "/static/css/main.81770ac6.css",
+    "main.js": "/static/js/main.2389891a.js",
+    "static/media/Herosectionimage.jpg": "/static/media/Herosectionimage.fc42ba3db92df5a887e8.jpg",
     "static/media/powerbeetle.jpg": "/static/media/powerbeetle.7b15440186807c192e36.jpg",
     "static/media/logimage.jpg": "/static/media/logimage.9c194e6ee5728fc1706e.jpg",
     "static/media/carpenterant.jpg": "/static/media/carpenterant.4b03fcd5d758ace76395.jpg",
-    "static/media/herosectionimage.jpg": "/static/media/herosectionimage.b828019d44489fdb5ae3.jpg",
     "static/media/carpenterbee.jpg": "/static/media/carpenterbee.0f2c3fc455fd94b867a2.jpg",
     "static/media/termiteimage.jpg": "/static/media/termiteimage.39f106267f78b4aef79f.jpg",
     "static/media/AboutImage.png": "/static/media/AboutImage.585ef5b9e0f3d40629a4.png",
-    "static/media/Hunterlogo.jpg": "/static/media/Hunterlogo.c0174ffd1dc67aeb7f95.jpg",
     "index.html": "/index.html",
-    "main.d0183a4d.css.map": "/static/css/main.d0183a4d.css.map",
-    "main.9ddb93b7.js.map": "/static/js/main.9ddb93b7.js.map"
+    "main.81770ac6.css.map": "/static/css/main.81770ac6.css.map",
+    "main.2389891a.js.map": "/static/js/main.2389891a.js.map"
   },
   "entrypoints": [
-    "static/css/main.d0183a4d.css",
-    "static/js/main.9ddb93b7.js"
+    "static/css/main.81770ac6.css",
+    "static/js/main.2389891a.js"
   ]
 }
