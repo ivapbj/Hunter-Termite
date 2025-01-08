@@ -18,7 +18,7 @@
 .quote-button {
   position: absolute; /* Positioning for top-right placement */
   top: 100px; /* Distance from the top of the page */
-  right: 0px; /* Distance from the right of the page */
+  right: 200px; /* Distance from the right of the page */
   display: inline-block;
   background-color: #FFD700;
   color: #000;
@@ -94,7 +94,7 @@ button.submit-button:hover {
 .slogan {
   font-size: 3rem; /* Adjusted font size */
   font-weight: bold; /* Added font weight */
-  margin-top: 800px; /* Add spacing between button and slogan */
+  margin-top: 850px; /* Add spacing between button and slogan */
   margin-bottom: 0px; /* Ensure proper spacing between slogan and insect images */
   background-color: #5C4033; /* Dark brown color */
   color: #FFF; /* White text color */
@@ -219,59 +219,5 @@ button.submit-button:hover {
   margin: 10px 0;
 }
 
-/* Responsive styles */
-@media (max-width: 768px) {
-  .about-section{
-    padding: 20px;
-  }
-  .about-content{
-      flex-direction: column;
-  }
-  .about-text-container{
-    min-width: auto;
-  }
-  .h1 {
-    font-size: 1.8rem;
-  }
 
-  .h3 {
-    font-size: 1.4rem;
-  }
 
-  .h2 {
-    font-size: 1.4rem;
-  }
-
-  .blurb {
-    font-size: 1rem;
-    line-height: 1.5;
-  }
-
-  .about-image {
-    max-width: 100%;
-  }
-
-  .phone {
-    font-size: 1rem;
-  }
-
-}
-@media (max-width: 480px) {
-  .h1 {
-    font-size: 1.5rem;
-  }
-
-  .h3 {
-    font-size: 1.2rem;
-  }
-
-  .h2 {
-    font-size: 1.2rem;
-  }
-
-  .blurb {
-    font-size: 0.9rem;
-    line-height: 1.4;
-  }
-
-}
