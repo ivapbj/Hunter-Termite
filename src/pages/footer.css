@@ -2,125 +2,82 @@
 .footer {
   position: relative;
   display: flex;
-  justify-content: center; /* Centers content horizontally */
-  align-items: center; /* Centers content vertically */
-  flex-direction: column; /* Stacks items vertically */
-  height: 100px; /* Adjust height as necessary */
+  flex-direction: column; /* Stack content vertically */
+  align-items: center;
+  justify-content: center;
+  height: auto;
   background-image: url("../assets/logimage.jpg");
   background-size: cover;
   background-position: center;
   color: white;
-  padding: 50px;
-  margin-top: 950px;
+  padding: 35px;
+  margin-top: 1000px;
 }
 
-/* Container for images, aligned in a row and centered */
-.footer-images {
+/* Container for rating section and social icons */
+.footer-content {
   display: flex;
-  justify-content: center; /* Centers the images horizontally */
-  align-items: center; /* Centers the images vertically */
-  gap: 20px; /* Adjust the gap between images */
-  margin-top: 10px; /* Adjust to push images towards the top */
+  align-items: center;
+  justify-content: center; /* Centers all items horizontally */
+  gap: 20px; /* Space between each item */
+  width: 100%;
+  max-width: 1200px;
 }
 
-/* Individual image styles */
-.footer-images img {
-  width: 50px; /* Set default size for footer images */
-  height: 50px;
-  object-fit: cover;
-  border-radius: 50%; /* Circular images */
+/* Rating section styles */
+.rating-section {
+  display: flex;
+  align-items: center;
+  gap: 10px; /* Spacing between the Google image and link */
+}
+
+.google-image {
+  width: 150px;
+  height: auto;
+  margin-left: -40px; /* Adjust the spacing */
+}
+
+.rating-link {
+  font-size: 2rem;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  text-align: center;
+  margin-left: -20px
+}
+
+.rating-link:hover {
+  color: #f90a0a; /* Highlight on hover */
+}
+
+/* Social icons container */
+.social-icons {
+  display: flex;
+  gap: 15px; /* Space between Instagram and Facebook icons */
+}
+
+.instagram-link,
+.facebook-link {
+  font-size: 2rem;
+  color: white;
+  transition: color 0.3s;
+}
+
+.instagram-link:hover {
+  color: #ff0066; /* Optional: Highlight color */
+}
+.facebook-link:hover {
+  color: #1409e2; /* Optional: Highlight color */
 }
 
 /* Footer text styles */
-.footer-texts p {
-  margin: 0;
-  padding: 0;
+.footer-texts {
+  text-align: center;
+  margin-top: 20px;
 }
 
-.instagram-link {
-  margin-top: 50px;
-  color: #ffffff; 
-  font-size: 32px;
-  margin-right: 10px;
-}
-.facebook-link {
-  margin-top: 50px;
-  color: #ffffff; 
-  font-size: 32px;
-  margin-right: 10px;
-}
-
-.footer-copyright {
-  font-size: 14px;
-  margin: 10px 0;
-  margin-top: 100px;
-}
-
+.footer-copyright,
 .footer-powered-by {
   font-size: 14px;
-  margin-left: 50px;
-}
-
-/* Mobile responsiveness */
-@media (max-width: 768px) {
-  .footer {
-    flex-direction: column; /* Stack footer items */
-    height: auto; /* Adjust height to content */
-    align-items: center; /* Center-align on mobile */
-    padding: 20px; /* Reduce padding for smaller screens */
-    margin-top: 150px; /* Adjust top margin for spacing */
-  }
-
-  .footer-images {
-    flex-direction: column; /* Stack images vertically */
-    align-items: center;
-    gap: 10px; /* Reduce gap between stacked images */
-  }
-
-  .footer-images img {
-    width: 40px; /* Reduce image size for smaller screens */
-    height: 40px;
-  }
-
-  .footer-texts {
-    align-items: center;
-    text-align: center;
-  }
-
-  .instagram-link {
-    font-size: 28px; /* Reduce size for mobile */
-    margin: 20px 0; /* Add vertical spacing */
-  }
-
-  .footer-copyright {
-    font-size: 12px; /* Reduce font size for smaller screens */
-  }
-
-  .footer-powered-by {
-    font-size: 12px; /* Reduce font size */
-    margin-left: 0; /* Center-align for mobile */
-    text-align: center;
-  }
-}
-
-@media (max-width: 480px) {
-  .footer {
-    padding: 10px; /* Further reduce padding for smaller screens */
-    margin-top: 100px; /* Adjust for very small devices */
-  }
-
-  .footer-images img {
-    width: 30px; /* Smaller image size for very small screens */
-    height: 30px;
-  }
-
-  .instagram-link {
-    font-size: 24px; /* Adjust font size */
-  }
-
-  .footer-copyright,
-  .footer-powered-by {
-    font-size: 10px; /* Further reduce font size */
-    text-align: center;
-  }
+  margin: 5px 0;
 }

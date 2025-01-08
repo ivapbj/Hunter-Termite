@@ -112,10 +112,6 @@ const HeroSection = () => {
               &times;
             </button>
             <h2>Please send a detailed message stating how we can help you.</h2>
-            <p>
-              Send a photo of the area that has pest damage along with the best
-              phone number to reach you at.
-            </p>
 
             <form onSubmit={handleSubmit}>
               <div className="form-group">

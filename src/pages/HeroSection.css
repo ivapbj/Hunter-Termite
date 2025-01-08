@@ -8,9 +8,12 @@
   background-position: center;
   display: flex;
   flex-direction: column;
+  flex-grow: 1; /* Allow HeroSection to grow and push Footer */
   justify-content: flex-start; /* Align items from the top */
   align-items: center;
   text-align: center;
+  padding: 20px;
+  box-sizing: border-box;
   padding-top: 150px; /* Create space at the top */
   color: rgb(0, 0, 0); /* Added text color for better visibility */
 }
@@ -18,7 +21,7 @@
 .quote-button {
   position: absolute; /* Positioning for top-right placement */
   top: 100px; /* Distance from the top of the page */
-  right: 200px; /* Distance from the right of the page */
+  right: 325px; /* Distance from the right of the page */
   display: inline-block;
   background-color: #FFD700;
   color: #000;
@@ -37,20 +40,20 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+  background-color: rgba(0, 0, 0, 0.5); /* Overlay background */
   display: flex;
   justify-content: center;
   align-items: center;
-  z-index: 9999; /* Ensure modal is on top */
+  z-index: 1000; /* Make sure it's above other content */
 }
-
 .modal-content {
-  background-color: #fff;
-  padding: 30px;
+  position: relative; /* To position the close button inside */
+  background-color: white;
+  padding: 20px;
+  max-width: 500px;
+  width: 100%;
   border-radius: 8px;
-  width: 80%;
-  max-width: 600px;
-  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .close-modal {
@@ -60,7 +63,13 @@
   font-size: 30px;
   background: none;
   border: none;
+  color: #000;
   cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.close-modal:hover {
+  color: #ff0000; /* Change color on hover (optional) */
 }
 
 .form-group {
@@ -94,13 +103,17 @@ button.submit-button:hover {
 .slogan {
   font-size: 3rem; /* Adjusted font size */
   font-weight: bold; /* Added font weight */
-  margin-top: 850px; /* Add spacing between button and slogan */
+  margin-top: 800px; /* Add spacing between button and slogan */
   margin-bottom: 0px; /* Ensure proper spacing between slogan and insect images */
   background-color: #5C4033; /* Dark brown color */
   color: #FFF; /* White text color */
   text-align: center;
   padding: 10px 0; /* Add padding for better spacing inside the bar */
-  width: 100%; /* Ensures it spans the full width */
+  width: 100%; /* Ensure the width is 100% of its container */
+  position: absolute; /* Position the bar to span across the page */
+  top: 0; /* Start at the top of the screen */
+  left: 0; /* Extend fully to the left edge */
+  right: 0; /* Extend fully to the right edge */
   box-sizing: border-box; /* Ensures padding doesn't affect width */
 }
 
@@ -109,7 +122,7 @@ button.submit-button:hover {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 30px; /* Add spacing between slogan and insect images */
+  margin-top: 800px; /* Add spacing between slogan and insect images */
   flex-wrap: wrap;
 }
 
@@ -216,7 +229,7 @@ button.submit-button:hover {
   font-size:2rem;
   font-weight: 700;
   color: #000;
-  margin: 10px 0;
+  margin-bottom: 0px;
 }
 
 

@@ -1,20 +1,19 @@
 import React from "react";
-// import Header from "./pages/Header";
+
 import HeroSection from "./pages/HeroSection";
-// import AboutSection from "./pages/AboutSection";
 
 import Footer from "./pages/Footer";
 
 function App() {
   return (
-    <>
-      {/* <Header /> */}
-      <main>
+    <div
+      style={{ display: "flex", flexDirection: "column", minHeight: "100vh" }}
+    >
+      <main style={{ flex: 1 }}>
         <HeroSection />
-        {/* <AboutSection /> */}
       </main>
       <Footer />
-    </>
+    </div>
   );
 }
 
