@@ -19,20 +19,23 @@
   display: flex;
   align-items: center;
   justify-content: center; /* Centers all items horizontally */
-  gap: 20px; /* Space between each item */
+  gap: 15px; /* Space between each item */
   width: 100%;
   max-width: 1200px;
+  flex-wrap: wrap;
 }
 
 /* Rating section styles */
 .rating-section {
   display: flex;
   align-items: center;
-  gap: 10px; /* Spacing between the Google image and link */
+  gap: 8px; /* Spacing between the Google image and link */
+  flex-wrap: wrap;
+  text-align: center;
 }
 
 .google-image {
-  width: 150px;
+  width: 120px;
   height: auto;
   margin-left: -40px; /* Adjust the spacing */
 }
@@ -43,7 +46,7 @@
   text-decoration: none;
   font-weight: bold;
   text-align: center;
-  margin-left: -20px
+  /* margin-left: -20px */
 }
 
 .rating-link:hover {
@@ -53,12 +56,14 @@
 /* Social icons container */
 .social-icons {
   display: flex;
+  justify-content: center;
   gap: 15px; /* Space between Instagram and Facebook icons */
+  margin-top: 10px; /* Adjust spacing */
 }
 
 .instagram-link,
 .facebook-link {
-  font-size: 2rem;
+  font-size: 1.8rem;
   color: white;
   transition: color 0.3s;
 }
@@ -73,7 +78,7 @@
 /* Footer text styles */
 .footer-texts {
   text-align: center;
-  margin-top: 20px;
+  margin-top: 15px;
 }
 
 .footer-copyright,
@@ -81,3 +86,168 @@
   font-size: 14px;
   margin: 5px 0;
 }
+/* Add media query for smaller screens */
+@media (max-width: 1024px) {
+  .footer {
+    margin-top: 150px; /* Adjust margin */
+  }
+
+  .footer-content {
+    gap: 10px; /* Reduce spacing */
+  }
+
+  .rating-section {
+    gap: 5px; /* Adjust spacing */
+  }
+
+  .google-image {
+    width: 100px; /* Smaller image size */
+    margin-left: -20px; /* Adjust spacing */
+  }
+
+  .rating-link {
+    font-size: 1.5rem; /* Smaller font size */
+  }
+
+  .social-icons {
+    gap: 10px; /* Adjust spacing */
+  }
+
+  .instagram-link,
+  .facebook-link {
+    font-size: 1.5rem; /* Smaller icon size */
+  }
+
+  .footer-texts {
+    margin-top: 10px; /* Adjust spacing */
+  }
+
+  .footer-copyright,
+  .footer-powered-by {
+    font-size: 12px; /* Smaller font size */
+  }
+}
+@media (max-width: 780px) {
+  .footer {
+    /* flex-direction: column; Stack content vertically */
+    padding: 20px; /* Reduce padding */
+    margin-top: 800px; /* Adjust margin */
+  }
+
+  .footer-content {
+    flex-direction: column; /* Stack items */
+    gap: 10px; /* Reduce spacing */
+    /* text-align: center; Center-align content */
+  }
+
+  .rating-section {
+    flex-direction: column; /* Stack image and text */
+    align-items: center; /* Center-align content */
+    /* gap: 5px; Adjust spacing */
+  }
+
+  .google-image {
+    width: 100px; /* Smaller image size */
+    
+  }
+
+  .rating-link {
+    font-size: 1.2rem; /* Smaller font size */
+ 
+  }
+
+  .social-icons {
+    
+    gap: 10px; /* Adjust spacing */
+  }
+
+  .instagram-link,
+  .facebook-link {
+    font-size: 1.5rem; /* Smaller icon size */
+  }
+
+  .footer-texts {
+    margin-top: 10px; /* Adjust spacing */
+  }
+
+  .footer-copyright,
+  .footer-powered-by {
+    font-size: 12px; /* Smaller font size */
+  }
+}
+@media (max-width: 480px){
+  .footer {
+    margin-top: 805px;
+    padding: 0px;
+    
+  }
+
+  .footer-content {
+    gap: 8px;
+  }
+
+  .google-image {
+    width: 80px;
+    align-self: center;
+    margin-left: 5px;
+  }
+
+  .rating-link {
+    font-size: 0.9rem;
+    margin-top: -10px;
+  }
+
+  .social-icons {
+    gap: 8px;
+  }
+
+  .instagram-link,
+  .facebook-link {
+    font-size: 1rem;
+  }
+
+  .footer-copyright,
+  .footer-powered-by {
+    font-size: 9px;
+    margin-top: -5px;  }
+} 
+  /* Specific styling for iPhone 12 Pro (390px width) */
+@media (max-width: 390px) {
+
+  .footer {
+    margin-top: 905px;
+    padding: 0px;
+    
+  }
+
+  .footer-content {
+    gap: 8px;
+  }
+
+  .google-image {
+    width: 80px;
+    align-self: center;
+    margin-left: 5px;
+  }
+
+  .rating-link {
+    font-size: 0.9rem;
+    margin-top: -10px;
+  }
+
+  .social-icons {
+    gap: 8px;
+  }
+
+  .instagram-link,
+  .facebook-link {
+    font-size: 1rem;
+  }
+
+  .footer-copyright,
+  .footer-powered-by {
+    font-size: 9px;
+    margin-top: -5px;  }
+}
+
+

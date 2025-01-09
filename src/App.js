@@ -9,9 +9,9 @@ function App() {
     <div
       style={{ display: "flex", flexDirection: "column", minHeight: "100vh" }}
     >
-      <main style={{ flex: 1 }}>
-        <HeroSection />
-      </main>
+      {/* <main style={{ flex: 1 }}> */}
+      <HeroSection />
+      {/* </main> */}
       <Footer />
     </div>
   );

@@ -5,6 +5,7 @@ import BeetleImage from "../assets/powerbeetle.jpg";
 import TermiteImage from "../assets/termiteimage.jpg";
 import CarpenterBee from "../assets/carpenterbee.jpg";
 import AboutImage from "../assets/AboutImage.png";
+import HeroImage from "../assets/Herosectionimage.jpg";
 
 const HeroSection = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -48,6 +49,12 @@ const HeroSection = () => {
 
   return (
     <div className="hero-section">
+      <div className="hero-image-container">
+        <img src={HeroImage} alt="Hero Section" className="hero-image" />
+        <button onClick={openModal} className="quote-button">
+          GET A FREE QUOTE
+        </button>
+      </div>
       {/* Slogan */}
       <div className="slogan">We Keep the Outside, Outside!</div>
 
@@ -98,11 +105,6 @@ const HeroSection = () => {
           </a>
         </div>
       </div>
-
-      {/* Quote Button */}
-      <button onClick={openModal} className="quote-button">
-        GET A FREE QUOTE
-      </button>
 
       {/* Modal Form */}
       {isModalOpen && (
