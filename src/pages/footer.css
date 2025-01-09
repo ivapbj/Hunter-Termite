@@ -11,7 +11,7 @@
   background-position: center;
   color: white;
   padding: 35px;
-  margin-top: 1000px;
+  margin-top: 1100px;
 }
 
 /* Container for rating section and social icons */
@@ -130,8 +130,8 @@
 @media (max-width: 780px) {
   .footer {
     /* flex-direction: column; Stack content vertically */
-    padding: 20px; /* Reduce padding */
-    margin-top: 800px; /* Adjust margin */
+    padding: 0px; /* Reduce padding */
+    margin-top: 900px; /* Adjust margin */
   }
 
   .footer-content {
@@ -177,9 +177,8 @@
 }
 @media (max-width: 480px){
   .footer {
-    margin-top: 805px;
-    padding: 0px;
-    
+    margin-top: 890px;  
+    padding-bottom: 10px;
   }
 
   .footer-content {
@@ -210,12 +209,13 @@
   .footer-powered-by {
     font-size: 9px;
     margin-top: -5px;  }
+    
 } 
   /* Specific styling for iPhone 12 Pro (390px width) */
 @media (max-width: 390px) {
 
   .footer {
-    margin-top: 905px;
+    margin-top: 1100px;
     padding: 0px;
     
   }

@@ -148,7 +148,7 @@ const HeroSection = () => {
       <section>
         <h2 className="h2">
           <i>
-            Our specialist has over 25 years' experience in exterminating wood
+            Mark Hunter has over 25 years' experience in exterminating wood
             destroying insects
           </i>
         </h2>
