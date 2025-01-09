@@ -20,7 +20,7 @@
 .quote-button {
   position: absolute;
   top: 150px;
-  right: 150px;
+  right: 325px;
   display: inline-block;
   background-color: #FFD700;
   color: #000;
@@ -56,11 +56,17 @@
 .modal-content {
   position: relative;
   background-color: white;
-  padding: 20px;
+  padding: 10px;
+  gap: 20px;
   max-width: 500px;
   width: 100%;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 
 .close-modal {
@@ -82,7 +88,7 @@
 .slogan {
   font-size: 3rem;
   font-weight: bold;
-  margin-top: 690px;
+  margin-top: 750px;
   margin-bottom: 0px;
   background-color: #5C4033;
   color: #FFF;
@@ -132,7 +138,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 800px;
+  margin-top: 850px;
   flex-wrap: wrap;
 }
 
@@ -203,7 +209,7 @@
     gap: 2px;
   }
   .insect-item {
-    width: 100px; /* Compact width for small screens */
+    width: 150px; /* Compact width for small screens */
     padding: 8px;
   }
 
@@ -213,7 +219,7 @@
   }
   .slogan {
     font-size: 3rem; /* Further reduce font size */
-    margin-top: 650px; /* Adjust margin to fit mobile layout */
+    margin-top: 500px; /* Adjust margin to fit mobile layout */
     padding: 15px 0; /*Further reduce padding */
   }
   .h2 {
@@ -271,7 +277,7 @@
     object-fit: contain; /* Prevent cropping */
   }
   .insect-container {
-    margin-top: 900px;
+    margin-top: 950px;
     gap: 2px;
   }
   .insect-item {
@@ -285,7 +291,7 @@
   }
   .slogan {
     font-size: 1.5rem; /* Further reduce font size */
-    margin-top: 1000px; /* Adjust margin to fit mobile layout */
+    margin-top: 880px; /* Adjust margin to fit mobile layout */
     padding: 15px 0; /*Further reduce padding */
   }
   .h1 {
@@ -361,7 +367,7 @@
   }
   .slogan {
     font-size: 1.5rem; /* Further reduce font size */
-    margin-top: 550px; /* Adjust margin to fit mobile layout */
+    margin-top: 400px; /* Adjust margin to fit mobile layout */
     padding: 6px 0; /*Further reduce padding */
   }
   .h2 {
@@ -419,7 +425,7 @@
   }
   .slogan {
     font-size: 1.5rem; /* Further reduce font size */
-    margin-top: 500px; /* Adjust margin to fit mobile layout */
+    margin-top: 350px; /* Adjust margin to fit mobile layout */
     padding: 6px 0; /*Further reduce padding */
   }
   .insect-container {

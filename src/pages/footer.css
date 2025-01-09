@@ -89,7 +89,7 @@
 /* Add media query for smaller screens */
 @media (max-width: 1024px) {
   .footer {
-    margin-top: 150px; /* Adjust margin */
+    margin-top: 300px; /* Adjust margin */
   }
 
   .footer-content {
@@ -101,7 +101,7 @@
   }
 
   .google-image {
-    width: 100px; /* Smaller image size */
+    width: 150px; /* Smaller image size */
     margin-left: -20px; /* Adjust spacing */
   }
 
@@ -115,7 +115,7 @@
 
   .instagram-link,
   .facebook-link {
-    font-size: 1.5rem; /* Smaller icon size */
+    font-size: 2rem; /* Smaller icon size */
   }
 
   .footer-texts {
@@ -124,14 +124,14 @@
 
   .footer-copyright,
   .footer-powered-by {
-    font-size: 12px; /* Smaller font size */
+    font-size: 16px; /* Smaller font size */
   }
 }
 @media (max-width: 780px) {
   .footer {
     /* flex-direction: column; Stack content vertically */
     padding: 0px; /* Reduce padding */
-    margin-top: 900px; /* Adjust margin */
+    margin-top: 950px; /* Adjust margin */
   }
 
   .footer-content {
