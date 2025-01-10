@@ -179,6 +179,7 @@
     height: 100px; /* Maintain aspect ratio */
     border-radius: 50%; /* Optional: rounded corners */
     object-fit: cover; /* Ensure images are contained properly */
+    margin: 10px;
   
   }
 
@@ -204,10 +205,10 @@
   color: #000;
 }
  .termite-label {
- 
-  font-size: 1.2rem;
+ font-size: 1.3rem;
   font-weight: 100;
   color: #000;
+  margin-bottom: 10px;
   
   
 } 

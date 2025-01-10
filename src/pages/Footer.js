@@ -53,9 +53,16 @@ function Footer() {
           <p className="footer-copyright">
             &copy; 2024 HUNTER TERMITE AND PEST MGMT
           </p>
-          <p className="footer-powered-by">
-            &copy; powered by TheIvanaCollective
-          </p>
+          <div className="footer-powered-by">
+            <a
+              href="https://www.instagram.com/theivanacollective/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="powered-by-link"
+            >
+              &copy; Created & Designed by TheIvanaCollective
+            </a>
+          </div>
         </div>
       </footer>
     </div>

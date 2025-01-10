@@ -95,65 +95,55 @@
 
 .footer-copyright,
 .footer-powered-by {
-  font-size: 14px;
-  margin: 5px 0;
+  font-size: 12px;
+  margin: 5px ;
+  
 }
-/* Responsive Design */
-@media (max-width: 768px) {
+.powered-by-link {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+/* Mobile responsiveness  */
+@media screen and (max-width: 800px) {
   .footer {
-    margin-top: 500px; /* Adjust spacing for smaller viewports */
-    padding: 20px;
+    padding: 20px 10px; /* Adjust padding for smaller screens */
+    margin-top: 0; /* Remove extra top margin for mobile */
   }
 
   .footer-content {
-    flex-direction: column;
-    gap: 15px;
-  }
-
-  .google-image {
-    width: 150px;
-  }
-
-  .rating-link {
-    font-size: 1.5rem;
+    flex-direction: column; /* Stack all items vertically */
+    gap: 15px; /* Adjust spacing between sections */
   }
 
   .social-icons {
-    gap: 10px;
-    margin: 10px 0;
+    margin: 10px 0; /* Center-align and adjust spacing */
+    margin-right: 0;
+    margin-left: 0;
+    gap: 10px; /* Smaller gap between icons */
   }
 
   .instagram-link,
   .facebook-link {
-    font-size: 2rem;
-  }
-}
-
-@media (max-width: 480px) {
-  .footer {
-    margin-top: 200px; /* Further reduce spacing */
-    padding: 15px;
-  }
-
-  .google-image {
-    width: 120px;
+    font-size: 2rem; /* Reduce icon size */
   }
 
   .rating-link {
-    font-size: 1.2rem;
+    font-size: 1.5rem; /* Reduce font size for smaller screens */
   }
 
-  .social-icons {
-    gap: 8px;
+  .google-image {
+    width: 180px; /* Scale down the image */
   }
 
-  .instagram-link,
-  .facebook-link {
-    font-size: 1.8rem;
-  }
-
-  .footer-copyright,
+   .footer-copyright,
   .footer-powered-by {
-    font-size: 10px;
+    font-size: 14px; /* Reduce font size for footer text */
+  
+  
+    
+  } 
+   
   }
-}
+  
+
