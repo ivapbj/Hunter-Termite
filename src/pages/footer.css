@@ -1,17 +1,24 @@
 /* General footer styles */
+.wrapper { 
+  display: flex;
+  flex-direction: column; /* Flexbox layout to make the footer sticky */
+  min-height: 100vh; /* Full height of the viewport */
+}
 .footer {
   position: relative;
   display: flex;
   flex-direction: column; /* Stack content vertically */
   align-items: center;
   justify-content: center;
+  min-height: 100%;
   height: auto;
+  width: 100%;
   background-image: url("../assets/logimage.jpg");
   background-size: cover;
   background-position: center;
   color: white;
   padding: 35px;
-  margin-top: 1100px;
+  margin-top: 1000px;
 }
 
 /* Container for rating section and social icons */
@@ -89,7 +96,7 @@
 /* Add media query for smaller screens */
 @media (max-width: 1024px) {
   .footer {
-    margin-top: 300px; /* Adjust margin */
+    margin-top: 685px; /* Adjust margin */
   }
 
   .footer-content {
@@ -129,9 +136,9 @@
 }
 @media (max-width: 780px) {
   .footer {
-    /* flex-direction: column; Stack content vertically */
+   
     padding: 0px; /* Reduce padding */
-    margin-top: 950px; /* Adjust margin */
+    margin-top: 1050px; /* Adjust margin */
   }
 
   .footer-content {
@@ -177,7 +184,7 @@
 }
 @media (max-width: 480px){
   .footer {
-    margin-top: 890px;  
+    margin-top: 925px;  
     padding-bottom: 10px;
   }
 
@@ -186,13 +193,13 @@
   }
 
   .google-image {
-    width: 80px;
+    width: 120px;
     align-self: center;
     margin-left: 5px;
   }
 
   .rating-link {
-    font-size: 0.9rem;
+    font-size: 1rem;
     margin-top: -10px;
   }
 
@@ -202,7 +209,8 @@
 
   .instagram-link,
   .facebook-link {
-    font-size: 1rem;
+    font-size: 2rem;
+    margin-top: 0px;
   }
 
   .footer-copyright,
@@ -215,7 +223,7 @@
 @media (max-width: 390px) {
 
   .footer {
-    margin-top: 1100px;
+    margin-top: 1000px;
     padding: 0px;
     
   }
@@ -242,6 +250,7 @@
   .instagram-link,
   .facebook-link {
     font-size: 1rem;
+    margin-top: -7px;
   }
 
   .footer-copyright,
@@ -249,5 +258,4 @@
     font-size: 9px;
     margin-top: -5px;  }
 }
-
 

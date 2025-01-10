@@ -174,7 +174,7 @@ const HeroSection = () => {
             <i>
               <br />
             </i>{" "}
-            Agawam, West Springfield, and the surrounding communities.
+            Western, Central and Northern Massachusetts.
           </i>
           <br />
           <i>

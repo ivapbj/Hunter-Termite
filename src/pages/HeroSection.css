@@ -1,6 +1,7 @@
 /* Hero Section */
 .hero-section {
   position: relative;
+  min-height: auto;
   height: 95vh;
   width: 100%;
   background-size: cover;
@@ -20,7 +21,7 @@
 .quote-button {
   position: absolute;
   top: 150px;
-  right: 325px;
+  right: 150px;
   display: inline-block;
   background-color: #FFD700;
   color: #000;
@@ -88,7 +89,7 @@
 .slogan {
   font-size: 3rem;
   font-weight: bold;
-  margin-top: 750px;
+  margin-top: 635px;
   margin-bottom: 0px;
   background-color: #5C4033;
   color: #FFF;
@@ -96,7 +97,6 @@
   padding: 10px 0;
   width: 100%;
   position: absolute;
-
   box-sizing: border-box;
 }
 .h2 {
@@ -120,7 +120,7 @@
 }
 .hero-image {
   width: 100%;
-  height: 107%;
+  height: 100%;
   object-fit: cover;
   position: absolute;
   top: 0;
@@ -131,6 +131,7 @@
   font-size: 1.3rem;
   font-weight: 700;
   color: #000;
+  margin-bottom: 
   
 }
 /* Insect Container */
@@ -138,7 +139,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 850px;
+  margin-top: 720px;
   flex-wrap: wrap;
 }
 
@@ -189,10 +190,10 @@
 /* Responsive Styles */
 @media (max-width: 1024px) {
   .quote-button {
-    top: 570px;
-    right: 125px;
-    font-size: 20px;
-    padding: 10px 15px;
+    top: 500px; 
+    right:50px;
+    font-size: 25px;
+    padding: 15px 20px;
   }
  
     .hero-image {
@@ -205,21 +206,22 @@
       z-index: -1;
     }
     .insect-container {
-    margin-top: 600px;
+    margin-top: 525px;
     gap: 2px;
   }
   .insect-item {
-    width: 150px; /* Compact width for small screens */
+    width: 300px; /* Compact width for small screens */
+    font-size: 1.5rem;
     padding: 8px;
   }
 
   .carpenter-image, .beetle-image, .termite-image, .bee-image {
-    width: 70px; /* Even smaller image size */
-    height: 70px;
+    width: 80px; /* Even smaller image size */
+    height: 80px;
   }
   .slogan {
     font-size: 3rem; /* Further reduce font size */
-    margin-top: 500px; /* Adjust margin to fit mobile layout */
+    margin-top: 425px; /* Adjust margin to fit mobile layout */
     padding: 15px 0; /*Further reduce padding */
   }
   .h2 {
@@ -244,7 +246,7 @@
   }
   
   .blurb {
-    font-size: 1.3rem;
+    font-size: 1.5rem;
     font-weight: 700;
     color: #000;
     
@@ -253,7 +255,7 @@
   .about-image {
     max-width: 200px;
     max-height: 200px;
-    margin-top: 200px;
+    margin-top: 180px;
   }
   .phone {
     font-size: 2rem;
@@ -292,7 +294,7 @@
   .slogan {
     font-size: 1.5rem; /* Further reduce font size */
     margin-top: 880px; /* Adjust margin to fit mobile layout */
-    padding: 15px 0; /*Further reduce padding */
+    padding: 25px 0; /*Further reduce padding */
   }
   .h1 {
     font-size: 1.8rem;
@@ -353,12 +355,17 @@
     object-fit: contain; /* Prevent cropping */
   }
   .insect-container {
-    margin-top: 450px;
-    gap: 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 475px;
+    flex-wrap: wrap;
+   
   }
   .insect-item {
     width: 100px; /* Compact width for small screens */
     padding: 8px;
+    font-size: 1rem;
   }
 
   .carpenter-image, .beetle-image, .termite-image, .bee-image {
@@ -368,7 +375,7 @@
   .slogan {
     font-size: 1.5rem; /* Further reduce font size */
     margin-top: 400px; /* Adjust margin to fit mobile layout */
-    padding: 6px 0; /*Further reduce padding */
+    padding: 14px 0; /*Further reduce padding */
   }
   .h2 {
     font-size: 1.9rem;
@@ -425,19 +432,24 @@
   }
   .slogan {
     font-size: 1.5rem; /* Further reduce font size */
-    margin-top: 350px; /* Adjust margin to fit mobile layout */
+    margin-top: 325px; /* Adjust margin to fit mobile layout */
     padding: 6px 0; /*Further reduce padding */
   }
   .insect-container {
-    margin-top: 400px;
+    margin-top: 370px;
     gap: 2px;
+  
+  }
+  .insect-item {
+    width: 100px; /* Compact width for small screens */
+    padding: 8px;
   }
 .about-content {
   flex-direction: column;
   margin-top: 10px;
 }
 .h1 {
-  font-size: 2rem;
+  font-size: 1.5rem;
   font-weight: 700;
   color: #000;
   margin-bottom: -20px;
@@ -457,7 +469,7 @@
   font-size: 1.2rem;
   font-weight: 700;
   color: #000;
-  margin-bottom: 20px;
+  margin-bottom: 5px;
   
 } 
 .phone {
