@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Hunter-Termite/static/css/main.44fba013.css",
-    "main.js": "/Hunter-Termite/static/js/main.564c4a46.js",
+    "main.css": "/Hunter-Termite/static/css/main.0bbc62d8.css",
+    "main.js": "/Hunter-Termite/static/js/main.ec1f188d.js",
     "static/media/Herosectionimage.jpg": "/Hunter-Termite/static/media/Herosectionimage.fc42ba3db92df5a887e8.jpg",
     "static/media/powerbeetle.jpg": "/Hunter-Termite/static/media/powerbeetle.7b15440186807c192e36.jpg",
     "static/media/logimage.jpg": "/Hunter-Termite/static/media/logimage.9c194e6ee5728fc1706e.jpg",
@@ -11,11 +11,11 @@
     "static/media/AboutImage.png": "/Hunter-Termite/static/media/AboutImage.585ef5b9e0f3d40629a4.png",
     "static/media/googleimage.png": "/Hunter-Termite/static/media/googleimage.e1cf70f337c5f9891148.png",
     "index.html": "/Hunter-Termite/index.html",
-    "main.44fba013.css.map": "/Hunter-Termite/static/css/main.44fba013.css.map",
-    "main.564c4a46.js.map": "/Hunter-Termite/static/js/main.564c4a46.js.map"
+    "main.0bbc62d8.css.map": "/Hunter-Termite/static/css/main.0bbc62d8.css.map",
+    "main.ec1f188d.js.map": "/Hunter-Termite/static/js/main.ec1f188d.js.map"
   },
   "entrypoints": [
-    "static/css/main.44fba013.css",
-    "static/js/main.564c4a46.js"
+    "static/css/main.0bbc62d8.css",
+    "static/js/main.ec1f188d.js"
   ]
 }
