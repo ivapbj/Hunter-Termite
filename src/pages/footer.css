@@ -134,6 +134,54 @@
     font-size: 16px; /* Smaller font size */
   }
 }
+@media (max-width: 820px) {
+  .footer {
+   
+    padding: 0px; /* Reduce padding */
+    margin-top: 675px; /* Adjust margin */
+  }
+
+  .footer-content {
+    flex-direction: column; /* Stack items */
+    gap: 10px; /* Reduce spacing */
+    /* text-align: center; Center-align content */
+  }
+
+  .rating-section {
+    flex-direction: column; /* Stack image and text */
+    align-items: center; /* Center-align content */
+    /* gap: 5px; Adjust spacing */
+  }
+
+  .google-image {
+    width: 100px; /* Smaller image size */
+    
+  }
+
+  .rating-link {
+    font-size: 1.2rem; /* Smaller font size */
+ 
+  }
+
+  .social-icons {
+    
+    gap: 10px; /* Adjust spacing */
+  }
+
+  .instagram-link,
+  .facebook-link {
+    font-size: 1.5rem; /* Smaller icon size */
+  }
+
+  .footer-texts {
+    margin-top: 10px; /* Adjust spacing */
+  }
+
+  .footer-copyright,
+  .footer-powered-by {
+    font-size: 12px; /* Smaller font size */
+  }
+}
 @media (max-width: 780px) {
   .footer {
    
@@ -184,7 +232,7 @@
 }
 @media (max-width: 480px){
   .footer {
-    margin-top: 1000px;  
+    margin-top: 1030px;  
     padding-bottom: 10px;
   }
 
@@ -223,7 +271,46 @@
 @media (max-width: 390px) {
 
   .footer {
-    margin-top: 1000px;
+    margin-top: 1150px;
+    padding: 0px;
+    
+  }
+
+  .footer-content {
+    gap: 8px;
+  }
+
+  .google-image {
+    width: 80px;
+    align-self: center;
+    margin-left: 5px;
+  }
+
+  .rating-link {
+    font-size: 0.9rem;
+    margin-top: -10px;
+  }
+
+  .social-icons {
+    gap: 8px;
+  }
+
+  .instagram-link,
+  .facebook-link {
+    font-size: 1rem;
+    margin-top: -7px;
+  }
+
+  .footer-copyright,
+  .footer-powered-by {
+    font-size: 9px;
+    margin-top: -5px;  }
+}
+/* Specific styling for Samsung Galaxy S8+ (360px width) */
+@media (max-width: 360px) {
+
+  .footer {
+    margin-top: 1350px;
     padding: 0px;
     
   }

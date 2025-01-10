@@ -20,8 +20,8 @@
 /* Quote Button */
 .quote-button {
   position: absolute;
-  top: 150px;
-  right: 150px;
+  top: 100px;
+  right: 130px;
   display: inline-block;
   background-color: #FFD700;
   color: #000;
@@ -89,7 +89,7 @@
 .slogan {
   font-size: 3rem;
   font-weight: bold;
-  margin-top: 635px;
+  margin-top: 655px;
   margin-bottom: 0px;
   background-color: #5C4033;
   color: #FFF;
@@ -141,9 +141,10 @@
   align-items: center;
   margin-top: 720px;
   flex-wrap: wrap;
+  flex-direction: row;
 }
 
-.insect-item {
+.insect-item{
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -155,14 +156,56 @@
   background-color: #FFF;
   width: 100px; /* Fixed width for consistency */
   max-width: 90%; /* Prevent overflow on smaller screens */
+  gap: 5px;
+}
+.the-termites {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px;
+  border: 2px solid #5C4033;
+  border-radius: 10px;
+  padding: 15px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  background-color: #FFF;
+  width: 100px; /* Fixed width for consistency */
+  max-width: 90%; /* Prevent overflow on smaller screens */
+  gap: 5px;
+}
+.termite-image {
+  width: 100px; /* Adjust size for consistency */
+  height: 100px; /* Maintain aspect ratio */
+  border-radius: 50%; /* Optional: rounded corners */
+
+}
+.swarmer-image {
+  width: 100px; /* Adjust size for consistency */
+  height: 100px; /* Maintain aspect ratio */
+  border-radius: 50%; /* Optional: rounded corners */
+
 }
 
-.carpenter-image, .beetle-image, .termite-image, .bee-image {
+.carpenter-image, .beetle-image, .bee-image {
   width: 100px;
   height: 100px;
   border-radius: 50%;
   object-fit: cover;
   margin: 10px;
+
+}
+.insect-label {
+  font-size: 1.2rem;
+  font-weight: 100;
+  color: #000;
+}
+.insect-help-link {
+  font-size: 1rem;
+  color: #0066cc;
+  text-decoration: none;
+}
+
+.insect-help-link:hover {
+  color: #003399; /* Darker blue on hover */
 }
 
 /* About Section */
@@ -190,7 +233,7 @@
 /* Responsive Styles */
 @media (max-width: 1024px) {
   .quote-button {
-    top: 500px; 
+    top: 100px; 
     right:50px;
     font-size: 25px;
     padding: 15px 20px;
@@ -209,12 +252,21 @@
     margin-top: 525px;
     gap: 2px;
   }
-  .insect-item {
-    width: 300px; /* Compact width for small screens */
-    font-size: 1.5rem;
-    padding: 8px;
+  .insect-item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+    border: 2px solid #5C4033;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    background-color: #FFF;
+    width: 100px; /* Fixed width for consistency */
+    max-width: 90%; /* Prevent overflow on smaller screens */
+    gap: 5px;
   }
-
+ 
   .carpenter-image, .beetle-image, .termite-image, .bee-image {
     width: 80px; /* Even smaller image size */
     height: 80px;
@@ -249,6 +301,7 @@
     font-size: 1.5rem;
     font-weight: 700;
     color: #000;
+    margin-bottom: 0px;
     
   }
   
@@ -266,6 +319,8 @@
 }
 }
 /* Responsive Styles */
+@media (max-width: 820px)
+
 @media (max-width: 768px) {
  
   .quote-button {
@@ -339,8 +394,9 @@
     font-weight: 700;
     color: #000;
 }
-  
 }
+  
+
 
 
 @media (max-width: 480px) {
@@ -469,7 +525,7 @@
   font-size: 1.2rem;
   font-weight: 700;
   color: #000;
-  margin-bottom: 5px;
+  margin-bottom: 0px;
   
 } 
 .phone {
