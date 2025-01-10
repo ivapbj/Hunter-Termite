@@ -62,20 +62,23 @@ const HeroSection = () => {
       {/* Insect Images */}
       <div className="insect-container">
         <div className="the-termites">
-          <img src={SwarmerImage} alt="Termite" className="termite-image" />
-          <img
-            src={TermiteImage}
-            alt="Termite Swarmer"
-            className="swarmer-image"
-          />
-          <div className="insect-label">Termites</div>
-          <a
-            href="sms:+14132213065?body=Please%20text%20how%20we%20can%20help"
-            className="insect-help-link"
-          >
-            Get Help <span>&rarr;</span>
-          </a>
+          <div className="termite-images">
+            <img src={SwarmerImage} alt="Termite" className="termite-image" />
+            <img
+              src={TermiteImage}
+              alt="Termite Swarmer"
+              className="swarmer-image"
+            />
+            <div className="termite-label">Termites</div>
+            <a
+              href="sms:+14132213065?body=Please%20text%20how%20we%20can%20help"
+              className="termite-help-link"
+            >
+              Get Help <span>&rarr;</span>
+            </a>
+          </div>
         </div>
+
         <div className="insect-item">
           <img
             src={CarpenterAnt}
@@ -100,7 +103,6 @@ const HeroSection = () => {
             Get Help <span>&rarr;</span>
           </a>
         </div>
-
         <div className="insect-item">
           <img src={CarpenterBee} alt="Bee" className="bee-image" />
           <div className="insect-label">Carpenter Bees</div>
