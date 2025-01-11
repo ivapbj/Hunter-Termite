@@ -519,7 +519,80 @@
 }
 /* Responsive Styles */
 
+@media (max-width: 810px) {
+ 
+  .quote-button {
+    top: 750px;
+    right: 55px;
+    font-size: 18px;
+    padding: 20px 35px;
+  }
+  .hero-image {
+    height: auto; /* Allow natural height to avoid distortion */
+    object-fit: contain; /* Prevent cropping */
+  }
+  .insect-container {
+    margin-top: 950px;
+    gap: 2px;
+  }
+  .insect-item {
+    width: 100px; /* Compact width for small screens */
+    padding: 8px;
+  }
 
+  .carpenter-image, .beetle-image, .termite-image, .bee-image {
+    width: 70px; /* Even smaller image size */
+    height: 70px;
+  }
+  .slogan {
+    font-size: 1.5rem; /* Further reduce font size */
+    margin-top: 880px; /* Adjust margin to fit mobile layout */
+    padding: 25px 0; /*Further reduce padding */
+  }
+  .h1 {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #000;
+    margin-top: 600px;
+  }
+  .h3 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #000;
+    margin-bottom: 10px;
+ 
+  }
+  
+  .about-content {
+    flex-direction: column;
+    
+  }
+  .h2 {
+    font-size: 1.9rem;
+    font-weight: 700;
+    color: #000;
+    margin-bottom: -580px;
+    margin-top: 20px; 
+  }
+  
+  .about-image {
+    max-width: 200px;
+    max-height: 200px;
+    margin-top: -10px;
+  }
+  .blurb {
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: #000;
+    margin-bottom: 0px;
+    
+  } 
+  .phone {
+    font-size:1.5rem;
+    font-weight: 700;
+    color: #000;
+}
+}
 @media (max-width: 768px) {
  
   .quote-button {
@@ -599,6 +672,7 @@
 
 
 @media (max-width: 480px) {
+  
   .quote-button {
     top: 400px;
     right: 20px;
