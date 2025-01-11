@@ -21,7 +21,7 @@
 .quote-button {
   position: absolute;
   top: 100px;
-  right: 130px;
+  right: 350px;
   display: inline-block;
   background-color: #FFD700;
   color: #000;
@@ -89,7 +89,7 @@
 .slogan {
   font-size: 3rem;
   font-weight: bold;
-  margin-top: 555px;
+  margin-top: 725px;
   margin-bottom: -100px;
   background-color: #5C4033;
   color: #FFF;
@@ -138,7 +138,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 600px;
+  margin-top: 800px;
   flex-wrap: wrap;
   width: 100%;
 }
@@ -704,11 +704,11 @@
     margin-top: 325px; /* Adjust margin to fit mobile layout */
     padding: 6px 0; /*Further reduce padding */
   }
-  .insect-container .insect-container {
+  .insect-container {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 750px;
+    margin-top: 400px;
     flex-wrap: wrap;
     width: 100%;
   }
