@@ -1,24 +1,16 @@
-/* General footer styles */
-.wrapper { 
-  display: flex;
-  flex-direction: column; /* Flexbox layout to make the footer sticky */
-  min-height: 100vh; /* Full height of the viewport */
-}
+
 .footer {
-  /* position: relative; */
   display: flex;
   flex-direction: column; /* Stack content vertically */
   align-items: center;
   justify-content: center;
-  /* min-height: 100%; */
-  /* height: auto; */
   width: 100%;
   background-image: url("../assets/logimage.jpg");
   background-size: cover;
   background-position: center;
   color: white;
-  padding: 10px 20px;
-  margin-top: 1100px; 
+  padding: 0px 0px;
+  margin-top: 1000px;
 }
 
 /* Container for rating section and social icons */
@@ -68,7 +60,7 @@
   gap: 15px; /* Space between Instagram and Facebook icons */
    margin-top: 10px; /*Adjust spacing*/
    margin-right: 580px;
-   margin-left: 580px;
+   margin-left: 580px; 
  } 
 
 .instagram-link,
@@ -104,46 +96,68 @@
   text-decoration: none;
   font-weight: bold;
 }
-/* Mobile responsiveness  */
-@media screen and (max-width: 800px) {
+/* Tablet Specific Styles (768px) */
+@media screen and (max-width: 768px) {
   .footer {
-    padding: 20px 10px; /* Adjust padding for smaller screens */
-    margin-top: 0; /* Remove extra top margin for mobile */
+    display: flex;
+    flex-direction: column; /* Stack content vertically */
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    background-image: url("../assets/logimage.jpg");
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 10px 0px;
+    margin-top: 850px;
   }
 
   .footer-content {
-    flex-direction: column; /* Stack all items vertically */
-    gap: 15px; /* Adjust spacing between sections */
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center; /* Centers all items horizontally */
+    gap: 20px; /* Space between each item */
+    width: 100%;
+    max-width: 1200px;
+  }
+
+  .google-image {
+    width: 150px; /* Reduce image size for tablets */
+    height: auto;
+    margin-bottom: -20px;
+  }
+
+  .rating-link {
+    font-size: 1rem; /* Adjust font size for smaller screens */
+    margin-bottom: -20px;
+
   }
 
   .social-icons {
-    margin: 10px 0; /* Center-align and adjust spacing */
-    margin-right: 0;
-    margin-left: 0;
-    gap: 10px; /* Smaller gap between icons */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px; /* Space between Instagram and Facebook icons */
+  margin-bottom: -10px;
+  margin-right: 580px;
+  margin-left: 580px;
+  font-size: 1rem; /* Slightly smaller icons for tablets */;
   }
 
   .instagram-link,
   .facebook-link {
-    font-size: 2rem; /* Reduce icon size */
+    font-size: 1.5rem; /* Slightly smaller icons for tablets */
   }
 
-  .rating-link {
-    font-size: 1.5rem; /* Reduce font size for smaller screens */
+  .footer-texts {
+    font-size: 1rem; /* Adjust font size for text */
+    margin-top: 10px;
   }
 
-  .google-image {
-    width: 180px; /* Scale down the image */
-  }
-
-   .footer-copyright,
+  .footer-copyright,
   .footer-powered-by {
-    font-size: 14px; /* Reduce font size for footer text */
-  
-  
-    
-  } 
-   
+    font-size: 11px; /* Adjust font size for smaller text */
+    margin: 3px;
   }
-  
-
+}
