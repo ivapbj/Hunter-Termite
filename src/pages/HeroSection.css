@@ -532,7 +532,7 @@
     object-fit: contain; /* Prevent cropping */
   }
   .insect-container {
-    margin-top: 950px;
+    margin-top: 975px;
     gap: 2px;
   }
   .insect-item {
