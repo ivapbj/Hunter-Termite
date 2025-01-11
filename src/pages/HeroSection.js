@@ -3,7 +3,6 @@ import "./HeroSection.css";
 import CarpenterAnt from "../assets/carpenterant.jpg";
 import BeetleImage from "../assets/powerbeetle.jpg";
 import TermiteImage from "../assets/termiteimage.jpg";
-import SwarmerImage from "../assets/termiteswarmer.png";
 import CarpenterBee from "../assets/carpenterbee.jpg";
 import AboutImage from "../assets/AboutImage.png";
 import HeroImage from "../assets/Herosectionimage.jpg";
@@ -61,24 +60,6 @@ const HeroSection = () => {
 
       {/* Insect Images */}
       <div className="insect-container">
-        <div className="the-termites">
-          <div className="termite-images">
-            <img src={SwarmerImage} alt="Termite" className="termite-image" />
-            <img
-              src={TermiteImage}
-              alt="Termite Swarmer"
-              className="swarmer-image"
-            />
-            <div className="termite-label">Termites</div>
-            <a
-              href="sms:+14132213065?body=Please%20text%20how%20we%20can%20help"
-              className="termite-help-link"
-            >
-              Get Help <span>&rarr;</span>
-            </a>
-          </div>
-        </div>
-
         <div className="insect-item">
           <img
             src={CarpenterAnt}
@@ -96,6 +77,16 @@ const HeroSection = () => {
         <div className="insect-item">
           <img src={BeetleImage} alt="Beetle" className="beetle-image" />
           <div className="insect-label">Powder Post Beetles</div>
+          <a
+            href="sms:+14132213065?body=Please%20text%20how%20we%20can%20help"
+            className="insect-help-link"
+          >
+            Get Help <span>&rarr;</span>
+          </a>
+        </div>
+        <div className="insect-item">
+          <img src={TermiteImage} alt="Termite" className="termite-image" />
+          <div className="insect-label">Termites</div>
           <a
             href="sms:+14132213065?body=Please%20text%20how%20we%20can%20help"
             className="insect-help-link"
@@ -183,7 +174,7 @@ const HeroSection = () => {
             <i>
               <br />
             </i>{" "}
-            Western and Central and Massachusetts.
+            Western, Central and Northern Massachusetts.
           </i>
           <br />
           <i>

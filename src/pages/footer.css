@@ -1,42 +1,51 @@
 
+/* General footer styles */
+.wrapper { 
+  display: flex;
+  flex-direction: column; /* Flexbox layout to make the footer sticky */
+  min-height: 100vh; /* Full height of the viewport */
+}
 .footer {
+  position: relative;
   display: flex;
   flex-direction: column; /* Stack content vertically */
   align-items: center;
   justify-content: center;
+  min-height: 100%;
+  height: auto;
   width: 100%;
   background-image: url("../assets/logimage.jpg");
   background-size: cover;
   background-position: center;
   color: white;
-  padding: 0px 0px;
+  padding: 35px;
   margin-top: 1000px;
 }
 
 /* Container for rating section and social icons */
 .footer-content {
   display: flex;
-  flex-wrap: wrap;
   align-items: center;
   justify-content: center; /* Centers all items horizontally */
-  gap: 20px; /* Space between each item */
+  gap: 15px; /* Space between each item */
   width: 100%;
   max-width: 1200px;
- 
+  flex-wrap: wrap;
 }
 
 /* Rating section styles */
 .rating-section {
   display: flex;
-  flex-direction: column;
   align-items: center;
-  gap: 10px; /* Spacing between the Google image and link */
+  gap: 8px; /* Spacing between the Google image and link */
+  flex-wrap: wrap;
   text-align: center;
 }
 
 .google-image {
-  width: 220px;
+  width: 120px;
   height: auto;
+  margin-left: -40px; /* Adjust the spacing */
 }
 
 .rating-link {
@@ -44,8 +53,8 @@
   color: white;
   text-decoration: none;
   font-weight: bold;
-
-   
+  text-align: center;
+  /* margin-left: -20px */
 }
 
 .rating-link:hover {
@@ -56,20 +65,15 @@
 .social-icons {
   display: flex;
   justify-content: center;
-  align-items: center;
   gap: 15px; /* Space between Instagram and Facebook icons */
-   margin-top: 10px; /*Adjust spacing*/
-   margin-right: 580px;
-   margin-left: 580px; 
- } 
+  margin-top: 10px; /* Adjust spacing */
+}
 
 .instagram-link,
 .facebook-link {
-  font-size: 3rem;
+  font-size: 1.8rem;
   color: white;
   transition: color 0.3s;
-  
-    
 }
 
 .instagram-link:hover {
@@ -87,77 +91,171 @@
 
 .footer-copyright,
 .footer-powered-by {
-  font-size: 12px;
-  margin: 5px ;
-  
+  font-size: 14px;
+  margin: 5px 0;
 }
-.powered-by-link {
-  color: white;
-  text-decoration: none;
-  font-weight: bold;
-}
-/* Tablet Specific Styles (768px) */
-@media screen and (max-width: 768px) {
+/* Add media query for smaller screens */
+@media (max-width: 1024px) {
   .footer {
-    display: flex;
-    flex-direction: column; /* Stack content vertically */
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    background-image: url("../assets/logimage.jpg");
-    background-size: cover;
-    background-position: center;
-    color: white;
-    padding: 10px 0px;
-    margin-top: 850px;
+    margin-top: 685px; /* Adjust margin */
   }
 
   .footer-content {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center; /* Centers all items horizontally */
-    gap: 20px; /* Space between each item */
-    width: 100%;
-    max-width: 1200px;
+    gap: 10px; /* Reduce spacing */
+  }
+
+  .rating-section {
+    gap: 5px; /* Adjust spacing */
   }
 
   .google-image {
-    width: 150px; /* Reduce image size for tablets */
-    height: auto;
-    margin-bottom: -20px;
+    width: 150px; /* Smaller image size */
+    margin-left: -20px; /* Adjust spacing */
   }
 
   .rating-link {
-    font-size: 1rem; /* Adjust font size for smaller screens */
-    margin-bottom: -20px;
-
+    font-size: 1.5rem; /* Smaller font size */
   }
 
   .social-icons {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 15px; /* Space between Instagram and Facebook icons */
-  margin-bottom: -10px;
-  margin-right: 580px;
-  margin-left: 580px;
-  font-size: 1rem; /* Slightly smaller icons for tablets */;
+    gap: 10px; /* Adjust spacing */
   }
 
   .instagram-link,
   .facebook-link {
-    font-size: 1.5rem; /* Slightly smaller icons for tablets */
+    font-size: 2rem; /* Smaller icon size */
   }
 
   .footer-texts {
-    font-size: 1rem; /* Adjust font size for text */
-    margin-top: 10px;
+    margin-top: 10px; /* Adjust spacing */
   }
 
   .footer-copyright,
   .footer-powered-by {
-    font-size: 11px; /* Adjust font size for smaller text */
-    margin: 3px;
+    font-size: 16px; /* Smaller font size */
   }
+}
+@media (max-width: 780px) {
+  .footer {
+   
+    padding: 0px; /* Reduce padding */
+    margin-top: 1050px; /* Adjust margin */
+  }
+
+  .footer-content {
+    flex-direction: column; /* Stack items */
+    gap: 10px; /* Reduce spacing */
+    /* text-align: center; Center-align content */
+  }
+
+  .rating-section {
+    flex-direction: column; /* Stack image and text */
+    align-items: center; /* Center-align content */
+    /* gap: 5px; Adjust spacing */
+  }
+
+  .google-image {
+    width: 100px; /* Smaller image size */
+    
+  }
+
+  .rating-link {
+    font-size: 1.2rem; /* Smaller font size */
+ 
+  }
+
+  .social-icons {
+    
+    gap: 10px; /* Adjust spacing */
+  }
+
+  .instagram-link,
+  .facebook-link {
+    font-size: 1.5rem; /* Smaller icon size */
+  }
+
+  .footer-texts {
+    margin-top: 10px; /* Adjust spacing */
+  }
+
+  .footer-copyright,
+  .footer-powered-by {
+    font-size: 12px; /* Smaller font size */
+  }
+}
+@media (max-width: 480px){
+  .footer {
+    margin-top: 1000px;  
+    padding-bottom: 10px;
+  }
+
+  .footer-content {
+    gap: 8px;
+  }
+
+  .google-image {
+    width: 120px;
+    align-self: center;
+    margin-left: 5px;
+  }
+
+  .rating-link {
+    font-size: 1rem;
+    margin-top: -10px;
+  }
+
+  .social-icons {
+    gap: 8px;
+  }
+
+  .instagram-link,
+  .facebook-link {
+    font-size: 2rem;
+    margin-top: 0px;
+  }
+
+  .footer-copyright,
+  .footer-powered-by {
+    font-size: 9px;
+    margin-top: -5px;  }
+    
+} 
+  /* Specific styling for iPhone 12 Pro (390px width) */
+@media (max-width: 390px) {
+
+  .footer {
+    margin-top: 1000px;
+    padding: 0px;
+    
+  }
+
+  .footer-content {
+    gap: 8px;
+  }
+
+  .google-image {
+    width: 80px;
+    align-self: center;
+    margin-left: 5px;
+  }
+
+  .rating-link {
+    font-size: 0.9rem;
+    margin-top: -10px;
+  }
+
+  .social-icons {
+    gap: 8px;
+  }
+
+  .instagram-link,
+  .facebook-link {
+    font-size: 1rem;
+    margin-top: -7px;
+  }
+
+  .footer-copyright,
+  .footer-powered-by {
+    font-size: 9px;
+    margin-top: -5px;  }
 }
