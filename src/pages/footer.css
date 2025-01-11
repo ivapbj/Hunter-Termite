@@ -138,7 +138,7 @@
 @media (max-width: 780px) {
   .footer {
    padding: 0px; /* Reduce padding */
-    margin-top: 1150px; /* Adjust margin */
+    margin-top: 1310px; /* Adjust margin */
   }
 
   .footer-content {
@@ -223,7 +223,7 @@
 @media (max-width: 390px) {
 
   .footer {
-    margin-top: 1460px;
+    margin-top: 1550px;
     padding: 0px;
     
   }
