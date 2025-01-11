@@ -2,7 +2,7 @@ import React from "react";
 
 import HeroSection from "./pages/HeroSection";
 
-import Footer from "./pages/Footer";
+import Footer from "./components/Footer";
 
 function App() {
   return (

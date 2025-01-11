@@ -2,8 +2,7 @@ import React from "react";
 import { FaInstagram } from "react-icons/fa";
 import { FaFacebook } from "react-icons/fa";
 import GoogleImage from "../assets/googleimage.png";
-
-import "./footer.css"; // Ensure the CSS is correctly imported
+import "../components/footer.css"; // Ensure the CSS is correctly imported
 
 function Footer() {
   return (
