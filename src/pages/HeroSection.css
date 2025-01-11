@@ -255,6 +255,180 @@
  
 }
 /* Responsive Styles */
+@media (max-width: 1650px) {
+  .quote-button {
+    top: 100px;
+    right:225px;
+    font-size: 25px;
+    padding: 15px 20px;
+  }
+ 
+    .hero-image {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: -1;
+    }
+    .insect-container {
+    margin-top: 725px;
+    gap: 2px;
+  }
+  .insect-item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+    border: 2px solid #5C4033;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    background-color: #FFF;
+    width: 100px; /* Fixed width for consistency */
+    max-width: 90%; /* Prevent overflow on smaller screens */
+    gap: 5px;
+  }
+ 
+  .carpenter-image, .beetle-image, .termite-image, .bee-image, .swarmer-image {
+    width: 80px; /* Even smaller image size */
+    height: 80px;
+  }
+  .slogan {
+    font-size: 3rem; /* Further reduce font size */
+    margin-top: 640px; /* Adjust margin to fit mobile layout */
+    padding: 15px 0; /*Further reduce padding */
+  }
+  .h2 {
+    font-size: 2.3rem;
+    font-weight: 700;
+    color: #000;
+    margin-bottom: -10px;
+    margin-top: 20px; 
+  }
+  .h1 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #000;
+    margin-bottom: -20px;
+  }
+  .h3 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #000;
+    margin-bottom: -180px;
+ 
+  }
+  
+  .blurb {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #000;
+    margin-bottom: -0px;
+    
+  }
+  
+  .about-image {
+    max-width: 200px;
+    max-height: 200px;
+    margin-top: 180px;
+  }
+  .phone {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #000;
+   
+    
+}
+}
+@media (max-width: 1440px) {
+  .quote-button {
+    top: 100px;
+    right:0px;
+    font-size: 25px;
+    padding: 15px 20px;
+  }
+ 
+    .hero-image {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: -1;
+    }
+    .insect-container {
+    margin-top: 725px;
+    gap: 2px;
+  }
+  .insect-item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+    border: 2px solid #5C4033;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    background-color: #FFF;
+    width: 100px; /* Fixed width for consistency */
+    max-width: 90%; /* Prevent overflow on smaller screens */
+    gap: 5px;
+  }
+ 
+  .carpenter-image, .beetle-image, .termite-image, .bee-image, .swarmer-image {
+    width: 80px; /* Even smaller image size */
+    height: 80px;
+  }
+  .slogan {
+    font-size: 3rem; /* Further reduce font size */
+    margin-top: 640px; /* Adjust margin to fit mobile layout */
+    padding: 15px 0; /*Further reduce padding */
+  }
+  .h2 {
+    font-size: 2.3rem;
+    font-weight: 700;
+    color: #000;
+    margin-bottom: -10px;
+    margin-top: 20px; 
+  }
+  .h1 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #000;
+    margin-bottom: -20px;
+  }
+  .h3 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #000;
+    margin-bottom: -180px;
+ 
+  }
+  
+  .blurb {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #000;
+    margin-bottom: -0px;
+    
+  }
+  
+  .about-image {
+    max-width: 200px;
+    max-height: 200px;
+    margin-top: 180px;
+  }
+  .phone {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #000;
+   
+    
+}
+}
 @media (max-width: 1024px) {
   .quote-button {
     top: 100px;
