@@ -97,7 +97,7 @@
 /* Add media query for smaller screens */
 @media (max-width: 1024px) {
   .footer {
-    margin-top: 685px; /* Adjust margin */
+    margin-top: 1000px; /* Adjust margin */
   }
 
   .footer-content {
@@ -137,9 +137,8 @@
 }
 @media (max-width: 780px) {
   .footer {
-   
-    padding: 0px; /* Reduce padding */
-    margin-top: 1050px; /* Adjust margin */
+   padding: 0px; /* Reduce padding */
+    margin-top: 1150px; /* Adjust margin */
   }
 
   .footer-content {
@@ -185,7 +184,7 @@
 }
 @media (max-width: 480px){
   .footer {
-    margin-top: 1000px;  
+    margin-top: 1050px;  
     padding-bottom: 10px;
   }
 
@@ -224,7 +223,7 @@
 @media (max-width: 390px) {
 
   .footer {
-    margin-top: 1000px;
+    margin-top: 1460px;
     padding: 0px;
     
   }

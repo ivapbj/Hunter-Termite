@@ -6,6 +6,7 @@ import TermiteImage from "../assets/termiteimage.jpg";
 import CarpenterBee from "../assets/carpenterbee.jpg";
 import AboutImage from "../assets/AboutImage.png";
 import HeroImage from "../assets/Herosectionimage.jpg";
+import SwarmerImage from "../assets/termiteswarmer.png";
 
 const HeroSection = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -59,7 +60,26 @@ const HeroSection = () => {
       <div className="slogan">We Keep the Outside, Outside!</div>
 
       {/* Insect Images */}
+      {/* Insect Images */}
       <div className="insect-container">
+        <div className="the-termites">
+          <div className="termite-images">
+            <img src={SwarmerImage} alt="Termite" className="termite-image" />
+            <img
+              src={TermiteImage}
+              alt="Termite Swarmer"
+              className="swarmer-image"
+            />
+            <div className="termite-label">Termites</div>
+            <a
+              href="sms:+14132213065?body=Please%20text%20how%20we%20can%20help"
+              className="termite-help-link"
+            >
+              Get Help <span>&rarr;</span>
+            </a>
+          </div>
+        </div>
+
         <div className="insect-item">
           <img
             src={CarpenterAnt}
@@ -77,16 +97,6 @@ const HeroSection = () => {
         <div className="insect-item">
           <img src={BeetleImage} alt="Beetle" className="beetle-image" />
           <div className="insect-label">Powder Post Beetles</div>
-          <a
-            href="sms:+14132213065?body=Please%20text%20how%20we%20can%20help"
-            className="insect-help-link"
-          >
-            Get Help <span>&rarr;</span>
-          </a>
-        </div>
-        <div className="insect-item">
-          <img src={TermiteImage} alt="Termite" className="termite-image" />
-          <div className="insect-label">Termites</div>
           <a
             href="sms:+14132213065?body=Please%20text%20how%20we%20can%20help"
             className="insect-help-link"
@@ -174,7 +184,7 @@ const HeroSection = () => {
             <i>
               <br />
             </i>{" "}
-            Western, Central and Northern Massachusetts.
+            Western and Central Massachusetts.
           </i>
           <br />
           <i>

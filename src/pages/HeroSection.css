@@ -20,8 +20,8 @@
 /* Quote Button */
 .quote-button {
   position: absolute;
-  top: 150px;
-  right: 150px;
+  top: 100px;
+  right: 130px;
   display: inline-block;
   background-color: #FFD700;
   color: #000;
@@ -89,8 +89,8 @@
 .slogan {
   font-size: 3rem;
   font-weight: bold;
-  margin-top: 635px;
-  margin-bottom: 0px;
+  margin-top: 555px;
+  margin-bottom: -100px;
   background-color: #5C4033;
   color: #FFF;
   text-align: center;
@@ -131,19 +131,19 @@
   font-size: 1.3rem;
   font-weight: 700;
   color: #000;
-  margin-bottom: 
-  
+  margin-bottom: 0px;
 }
 /* Insect Container */
 .insect-container {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 720px;
+  margin-top: 600px;
   flex-wrap: wrap;
+  width: 100%;
 }
 
-.insect-item {
+.insect-item{
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -153,16 +153,83 @@
   padding: 15px;
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
   background-color: #FFF;
-  width: 100px; /* Fixed width for consistency */
-  max-width: 90%; /* Prevent overflow on smaller screens */
+  width: 180px; /* Fixed width for consistency */
+  max-width: 300px; 
+  gap: 10px;
 }
 
-.carpenter-image, .beetle-image, .termite-image, .bee-image {
+.the-termites {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  /* margin: 10px; */
+  border: 2px solid #5C4033;
+  border-radius: 10px;
+  padding: 25px; 
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  background-color: #FFF;
+  /* width: 180px; Fixed width for consistency */
+  max-width: 300px; 
+  /* gap: 10px; */
+}
+/* Container for the images */
+
+.termite-image{
+    width: 100px; /* Consistent size */
+    height: 100px; /* Maintain aspect ratio */
+    border-radius: 50%; /* Optional: rounded corners */
+    object-fit: cover; /* Ensure images are contained properly */
+    margin: 10px;
+  
+  }
+
+.swarmer-image {
+  width: 100px; /* Consistent size */
+  height: 100px; /* Maintain aspect ratio */
+  border-radius: 50%; /* Optional: rounded corners */
+  object-fit: cover; /* Ensure images are contained properly */
+  margin: 10px;
+}
+
+.carpenter-image, .beetle-image, .bee-image {
   width: 100px;
   height: 100px;
   border-radius: 50%;
   object-fit: cover;
   margin: 10px;
+
+}
+.insect-label {
+  font-size: 1.2rem;
+  font-weight: 100;
+  color: #000;
+}
+ .termite-label {
+ 
+  font-size: 1.2rem;
+  font-weight: 100;
+  color: #000;
+  
+  
+} 
+.termite-help-link {
+  font-size: 1rem;
+  color: #0066cc;
+  text-decoration: none;
+  
+}
+
+.termite-help-link:hover {
+  color: #003399; /* Darker blue on hover */
+}
+.insect-help-link {
+  font-size: 1rem;
+  color: #0066cc;
+  text-decoration: none;
+}
+
+.insect-help-link:hover {
+  color: #003399; /* Darker blue on hover */
 }
 
 /* About Section */
@@ -190,15 +257,15 @@
 /* Responsive Styles */
 @media (max-width: 1024px) {
   .quote-button {
-    top: 500px; 
-    right:50px;
+    top: 100px;
+    right:0px;
     font-size: 25px;
     padding: 15px 20px;
   }
  
     .hero-image {
       width: 100%;
-      height: 50%;
+      height: 100%;
       object-fit: cover;
       position: absolute;
       top: 0;
@@ -206,22 +273,31 @@
       z-index: -1;
     }
     .insect-container {
-    margin-top: 525px;
+    margin-top: 725px;
     gap: 2px;
   }
-  .insect-item {
-    width: 300px; /* Compact width for small screens */
-    font-size: 1.5rem;
-    padding: 8px;
+  .insect-item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+    border: 2px solid #5C4033;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    background-color: #FFF;
+    width: 100px; /* Fixed width for consistency */
+    max-width: 90%; /* Prevent overflow on smaller screens */
+    gap: 5px;
   }
-
-  .carpenter-image, .beetle-image, .termite-image, .bee-image {
+ 
+  .carpenter-image, .beetle-image, .termite-image, .bee-image, .swarmer-image {
     width: 80px; /* Even smaller image size */
     height: 80px;
   }
   .slogan {
     font-size: 3rem; /* Further reduce font size */
-    margin-top: 425px; /* Adjust margin to fit mobile layout */
+    margin-top: 640px; /* Adjust margin to fit mobile layout */
     padding: 15px 0; /*Further reduce padding */
   }
   .h2 {
@@ -249,6 +325,7 @@
     font-size: 1.5rem;
     font-weight: 700;
     color: #000;
+    margin-bottom: -0px;
     
   }
   
@@ -266,6 +343,8 @@
 }
 }
 /* Responsive Styles */
+
+
 @media (max-width: 768px) {
  
   .quote-button {
@@ -339,8 +418,9 @@
     font-weight: 700;
     color: #000;
 }
-  
 }
+  
+
 
 
 @media (max-width: 480px) {
@@ -364,11 +444,26 @@
   }
   .insect-item {
     width: 100px; /* Compact width for small screens */
+    height: 180px;
     padding: 8px;
     font-size: 1rem;
   }
-
-  .carpenter-image, .beetle-image, .termite-image, .bee-image {
+  .the-termites {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    /* margin: 10px; */
+    border: 2px solid #5C4033;
+    border-radius: 10px;
+    padding: 25px; 
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    background-color: #FFF;
+    /* width: 180px; Fixed width for consistency */
+    max-width: 100px; 
+    height: 180px;
+    /* gap: 10px; */
+  }
+  .carpenter-image, .beetle-image, .termite-image, .swarmer-image,.bee-image {
     width: 70px; /* Even smaller image size */
     height: 70px;
   }
@@ -435,14 +530,43 @@
     margin-top: 325px; /* Adjust margin to fit mobile layout */
     padding: 6px 0; /*Further reduce padding */
   }
-  .insect-container {
-    margin-top: 370px;
-    gap: 2px;
-  
+  .insect-container .insect-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 750px;
+    flex-wrap: wrap;
+    width: 100%;
   }
+  
+  
   .insect-item {
-    width: 100px; /* Compact width for small screens */
-    padding: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10px;
+  border: 2px solid #5C4033;
+  border-radius: 10px;
+  padding: 5px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  background-color: #FFF;
+  width: 180px; /* Fixed width for consistency */
+  max-width: 300px; 
+  gap: 10px;
+  }
+  .the-termites {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    /* margin: 10px; */
+    border: 2px solid #5C4033;
+    border-radius: 10px;
+    padding: 25px; 
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    background-color: #FFF;
+    /* width: 180px; Fixed width for consistency */
+    max-width: 250px; 
+    /* gap: 10px; */
   }
 .about-content {
   flex-direction: column;
@@ -469,7 +593,7 @@
   font-size: 1.2rem;
   font-weight: 700;
   color: #000;
-  margin-bottom: 5px;
+  margin-bottom: 0px;
   
 } 
 .phone {
@@ -481,8 +605,92 @@
  
 }
 }
+@media (max-width: 320px){
+  .quote-button {
+    top: 300px;
+    right: 10px;
+    font-size: 14px;
+    padding: 6px 12px;
+  }
+  .slogan {
+    font-size: 1.5rem; /* Further reduce font size */
+    margin-top: 250px; /* Adjust margin to fit mobile layout */
+    padding: 6px 0; /*Further reduce padding */
+  }
+  .insect-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 350px;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+  
+  
+  .insect-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10px;
+  border: 2px solid #5C4033;
+  border-radius: 10px;
+  padding: 5px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  background-color: #FFF;
+  width: 180px; /* Fixed width for consistency */
+  max-width: 300px; 
+  gap: 10px;
+  }
+  .the-termites {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    /* margin: 10px; */
+    border: 2px solid #5C4033;
+    border-radius: 10px;
+    padding: 25px; 
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    background-color: #FFF;
+    /* width: 180px; Fixed width for consistency */
+    max-width: 250px; 
+    /* gap: 10px; */
+  }
+.about-content {
+  flex-direction: column;
+  margin-top: 10px;
+}
+.h1 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #000;
+  margin-bottom: -20px;
+}
+.h3 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #000;
+  margin-bottom: -40px;
+  margin-top: 20px;
+}
+.about-image {
+  max-width: 150px;
+  max-height: 150px;
+}
+.blurb {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #000;
+  margin-bottom: 0px;
+  
+} 
+.phone {
+  font-size:1.5rem;
+  font-weight: 700;
+  color: #000;
+}
+}
 
-
+ 
  
 
 
