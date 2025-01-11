@@ -345,7 +345,7 @@
 @media (max-width: 1440px) {
   .quote-button {
     top: 100px;
-    right:0px;
+    right:200px;
     font-size: 25px;
     padding: 15px 20px;
   }
