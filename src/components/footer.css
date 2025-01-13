@@ -1,188 +1,211 @@
-
-/* General footer styles */
+/* Wrapper styles remain the same */
 .wrapper { 
   display: flex;
   flex-direction: column; /* Flexbox layout to make the footer sticky */
   min-height: 100vh; /* Full height of the viewport */
 }
+
 .footer {
   position: relative;
   display: flex;
   flex-direction: column; /* Stack content vertically */
   align-items: center;
   justify-content: center;
-  min-height: 100%;
-  height: auto;
   width: 100%;
+  height: auto;
   background-image: url("../assets/logimage.jpg");
   background-size: cover;
   background-position: center;
   color: white;
-  padding: 35px;
-  margin-top: 1000px;
+  padding: 20px; /* Adjust padding for mobile */
+  margin-top: 1000px; /* Reduce top margin for mobile */
 }
 
-/* Container for rating section and social icons */
+/* Footer content container */
 .footer-content {
   display: flex;
   align-items: center;
-  justify-content: center; /* Centers all items horizontally */
-  gap: 15px; /* Space between each item */
-  width: 100%;
-  max-width: 1200px;
-  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px; /* Adjust spacing for compact view */
+  flex-wrap: wrap; /* Allow wrapping */
+  max-width: 810px; /* Constrain width to screen size */
 }
 
-/* Rating section styles */
+/* Rating section */
 .rating-section {
   display: flex;
   align-items: center;
-  gap: 8px; /* Spacing between the Google image and link */
+  gap: 5px; /* Reduce spacing */
   flex-wrap: wrap;
   text-align: center;
 }
 
 .google-image {
-  width: 120px;
+  width: 100px; /* Adjust image size for smaller screens */
   height: auto;
-  margin-left: -40px; /* Adjust the spacing */
+  margin: 0; /* Center align */
 }
 
 .rating-link {
-  font-size: 2rem;
+  font-size: 1.4rem; /* Reduce font size for mobile */
   color: white;
   text-decoration: none;
   font-weight: bold;
   text-align: center;
-  /* margin-left: -20px */
 }
 
 .rating-link:hover {
   color: #f90a0a; /* Highlight on hover */
 }
 
-/* Social icons container */
+/* Social icons */
 .social-icons {
   display: flex;
   justify-content: center;
-  gap: 15px; /* Space between Instagram and Facebook icons */
+  gap: 8px; /* Reduce spacing */
   margin-top: 10px; /* Adjust spacing */
 }
 
 .instagram-link,
 .facebook-link {
-  font-size: 1.8rem;
+  font-size: 1.6rem; /* Adjust size for mobile */
   color: white;
   transition: color 0.3s;
 }
 
 .instagram-link:hover {
-  color: #ff0066; /* Optional: Highlight color */
-}
-.facebook-link:hover {
-  color: #1409e2; /* Optional: Highlight color */
+  color: #ff0066;
 }
 
-/* Footer text styles */
+.facebook-link:hover {
+  color: #1409e2;
+}
+
+/* Footer text */
 .footer-texts {
   text-align: center;
-  margin-top: 15px;
+  margin-top: 10px; /* Adjust spacing */
 }
 
 .footer-copyright,
 .footer-powered-by {
-  font-size: 14px;
+  font-size: 12px; /* Reduce font size */
   margin: 5px 0;
 }
-/* Add media query for smaller screens */
-@media (max-width: 1024px) {
-  .footer {
-    margin-top: 1000px; /* Adjust margin */
-  }
 
-  .footer-content {
-    gap: 10px; /* Reduce spacing */
-  }
-
-  .rating-section {
-    gap: 5px; /* Adjust spacing */
-  }
-
-  .google-image {
-    width: 150px; /* Smaller image size */
-    margin-left: -20px; /* Adjust spacing */
-  }
-
-  .rating-link {
-    font-size: 1.5rem; /* Smaller font size */
-  }
-
-  .social-icons {
-    gap: 10px; /* Adjust spacing */
-  }
-
-  .instagram-link,
-  .facebook-link {
-    font-size: 2rem; /* Smaller icon size */
-  }
-
-  .footer-texts {
-    margin-top: 10px; /* Adjust spacing */
-  }
-
-  .footer-copyright,
-  .footer-powered-by {
-    font-size: 16px; /* Smaller font size */
-  }
+/* Media query for mobile responsiveness */
+@media (max-width: 1440)  {
+  .wrapper{
+  display: flex;
+  flex-direction: column; /* Flexbox layout to make the footer sticky */
+  min-height: 100vh; /* Full height of the viewport */
 }
-@media (max-width: 810px) {
-  .footer {
-   padding: 0px; /* Reduce padding */
-    margin-top: 1125px; /* Adjust margin */
-  }
-
-  .footer-content {
-    flex-direction: column; /* Stack items */
-    gap: 10px; /* Reduce spacing */
-    /* text-align: center; Center-align content */
-  }
-
-  .rating-section {
-    flex-direction: column; /* Stack image and text */
-    align-items: center; /* Center-align content */
-    /* gap: 5px; Adjust spacing */
-  }
-
-  .google-image {
-    width: 100px; /* Smaller image size */
-    
-  }
-
-  .rating-link {
-    font-size: 1.2rem; /* Smaller font size */
- 
-  }
-
-  .social-icons {
-    
-    gap: 10px; /* Adjust spacing */
-  }
-
-  .instagram-link,
-  .facebook-link {
-    font-size: 1.5rem; /* Smaller icon size */
-  }
-
-  .footer-texts {
-    margin-top: 10px; /* Adjust spacing */
-  }
-
-  .footer-copyright,
-  .footer-powered-by {
-    font-size: 12px; /* Smaller font size */
-  }
+.footer {
+ padding: 0px; /* Reduce padding */
+  margin-top: 100px; /* Adjust margin */
 }
+
+.footer-content {
+  flex-direction: column; /* Stack items */
+  gap: 10px; /* Reduce spacing */
+  /* text-align: center; Center-align content */
+}
+
+.rating-section {
+  flex-direction: column; /* Stack image and text */
+  align-items: center; /* Center-align content */
+  /* gap: 5px; Adjust spacing */
+}
+
+.google-image {
+  width: 100px; /* Smaller image size */
+  
+}
+
+.rating-link {
+  font-size: 1.2rem; /* Smaller font size */
+
+}
+
+.social-icons {
+  
+  gap: 10px; /* Adjust spacing */
+}
+
+.instagram-link,
+.facebook-link {
+  font-size: 1.5rem; /* Smaller icon size */
+}
+
+.footer-texts {
+  margin-top: 10px; /* Adjust spacing */
+}
+
+.footer-copyright,
+.footer-powered-by {
+  font-size: 12px; /* Smaller font size */
+}
+}
+
+@media (max-width: 1024px) { 
+  .wrapper{
+  display: flex;
+  flex-direction: column; /* Flexbox layout to make the footer sticky */
+  min-height: 100vh; /* Full height of the viewport */
+}
+.footer {
+ padding: 0px; /* Reduce padding */
+  margin-top: 1650px; /* Adjust margin */
+}
+
+.footer-content {
+  flex-direction: column; /* Stack items */
+  gap: 10px; /* Reduce spacing */
+  /* text-align: center; Center-align content */
+}
+
+.rating-section {
+  flex-direction: column; /* Stack image and text */
+  align-items: center; /* Center-align content */
+  /* gap: 5px; Adjust spacing */
+}
+
+.google-image {
+  width: 100px; /* Smaller image size */
+  
+}
+
+.rating-link {
+  font-size: 1.2rem; /* Smaller font size */
+
+}
+
+.social-icons {
+  
+  gap: 10px; /* Adjust spacing */
+}
+
+.instagram-link,
+.facebook-link {
+  font-size: 1.5rem; /* Smaller icon size */
+}
+
+.footer-texts {
+  margin-top: 10px; /* Adjust spacing */
+}
+
+.footer-copyright,
+.footer-powered-by {
+  font-size: 12px; /* Smaller font size */
+}
+}
+
 @media (max-width: 780px) {
+  .wrapper { 
+    display: flex;
+    flex-direction: column; /* Flexbox layout to make the footer sticky */
+    min-height: 100vh; /* Full height of the viewport */
+  }
   .footer {
    padding: 0px; /* Reduce padding */
     margin-top: 1310px; /* Adjust margin */
@@ -230,6 +253,11 @@
   }
 }
 @media (max-width: 480px){
+  .wrapper { 
+    display: flex;
+    flex-direction: column; /* Flexbox layout to make the footer sticky */
+    min-height: 100vh; /* Full height of the viewport */
+  }
   .footer {
     margin-top: 1050px;  
     padding-bottom: 10px;
@@ -266,8 +294,104 @@
     margin-top: -5px;  }
     
 } 
-  /* Specific styling for iPhone 12 Pro (390px width) */
+
 @media (max-width: 390px) {
+/* Wrapper styles remain the same */
+.wrapper { 
+  display: flex;
+  flex-direction: column; /* Flexbox layout to make the footer sticky */
+  min-height: 100vh; /* Full height of the viewport */
+}
+
+.footer {
+  position: relative;
+  display: flex;
+  flex-direction: column; /* Stack content vertically */
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: auto;
+  background-image: url("../assets/logimage.jpg");
+  background-size: cover;
+  background-position: center;
+  color: white;
+  padding: 20px; /* Adjust padding for mobile */
+  margin-top: 500px; /* Reduce top margin for mobile */
+}
+
+/* Footer content container */
+.footer-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px; /* Adjust spacing for compact view */
+  flex-wrap: wrap; /* Allow wrapping */
+  max-width: 810px; /* Constrain width to screen size */
+}
+
+/* Rating section */
+.rating-section {
+  display: flex;
+  align-items: center;
+  gap: 5px; /* Reduce spacing */
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+.google-image {
+  width: 100px; /* Adjust image size for smaller screens */
+  height: auto;
+  margin: 0; /* Center align */
+}
+
+.rating-link {
+  font-size: 1.4rem; /* Reduce font size for mobile */
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  text-align: center;
+}
+
+.rating-link:hover {
+  color: #f90a0a; /* Highlight on hover */
+}
+
+/* Social icons */
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 8px; /* Reduce spacing */
+  margin-top: 10px; /* Adjust spacing */
+}
+
+.instagram-link,
+.facebook-link {
+  font-size: 1.6rem; /* Adjust size for mobile */
+  color: white;
+  transition: color 0.3s;
+}
+
+.instagram-link:hover {
+  color: #ff0066;
+}
+
+.facebook-link:hover {
+  color: #1409e2;
+}
+
+/* Footer text */
+.footer-texts {
+  text-align: center;
+  margin-top: 10px; /* Adjust spacing */
+}
+
+.footer-copyright,
+.footer-powered-by {
+  font-size: 12px; /* Reduce font size */
+  margin: 5px 0;
+}
+
+
 
   .footer {
     margin-top: 1425px;

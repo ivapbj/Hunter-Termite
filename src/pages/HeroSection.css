@@ -150,7 +150,7 @@
   margin: 10px;
   border: 2px solid #5C4033;
   border-radius: 10px;
-  padding: 15px;
+  padding: 25px;
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
   background-color: #FFF;
   width: 180px; /* Fixed width for consistency */
@@ -165,7 +165,7 @@
   /* margin: 10px; */
   border: 2px solid #5C4033;
   border-radius: 10px;
-  padding: 25px; 
+  padding: 20px; 
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
   background-color: #FFF;
   /* width: 180px; Fixed width for consistency */
@@ -283,14 +283,28 @@
     margin: 10px;
     border: 2px solid #5C4033;
     border-radius: 10px;
-    padding: 15px;
+    padding: 38px;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
     background-color: #FFF;
     width: 100px; /* Fixed width for consistency */
-    max-width: 90%; /* Prevent overflow on smaller screens */
+    max-width: 110%; /* Prevent overflow on smaller screens */
     gap: 5px;
   }
- 
+  .the-termites {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    /* margin: 10px; */
+    border: 2px solid #5C4033;
+    border-radius: 10px;
+    padding: 35px; 
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    background-color: #FFF;
+    /* width: 180px; Fixed width for consistency */
+    max-width: 115px; 
+    height: 180px;
+    /* gap: 10px; */
+  }
   .carpenter-image, .beetle-image, .termite-image, .bee-image, .swarmer-image {
     width: 80px; /* Even smaller image size */
     height: 80px;
@@ -361,7 +375,7 @@
     }
   
     .insect-container {
-    margin-top: 600px;
+    margin-top: 700px;
     gap: 2px;
   }
   .insect-item{
@@ -371,21 +385,35 @@
     margin: 10px;
     border: 2px solid #5C4033;
     border-radius: 10px;
-    padding: 15px;
+    padding: 40px;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
     background-color: #FFF;
     width: 100px; /* Fixed width for consistency */
-    max-width: 90%; /* Prevent overflow on smaller screens */
+    max-width: 110%; /* Prevent overflow on smaller screens */
     gap: 5px;
   }
- 
+  .the-termites {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    /* margin: 10px; */
+    border: 2px solid #5C4033;
+    border-radius: 10px;
+    padding: 35px; 
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    background-color: #FFF;
+    /* width: 180px; Fixed width for consistency */
+    max-width: 115px; 
+    height: 180px;
+    /* gap: 10px; */
+  }
   .carpenter-image, .beetle-image, .termite-image, .bee-image, .swarmer-image {
     width: 80px; /* Even smaller image size */
     height: 80px;
   }
   .slogan {
     font-size: 3rem; /* Further reduce font size */
-    margin-top: 480px; /* Adjust margin to fit mobile layout */
+    margin-top: 600px; /* Adjust margin to fit mobile layout */
     padding: 15px 0; /*Further reduce padding */
   }
   .h2 {
@@ -430,100 +458,11 @@
     
 }
 }
-@media (max-width: 1024px) {
-  .quote-button {
-    top: 100px;
-    right:0px;
-    font-size: 25px;
-    padding: 15px 20px;
-  }
- 
-    .hero-image {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      position: absolute;
-      top: 0;
-      left: 0;
-      z-index: -1;
-    }
-    .insect-container {
-    margin-top: 525px;
-    gap: 2px;
-  }
-  .insect-item{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 10px;
-    border: 2px solid #5C4033;
-    border-radius: 10px;
-    padding: 15px;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-    background-color: #FFF;
-    width: 100px; /* Fixed width for consistency */
-    max-width: 90%; /* Prevent overflow on smaller screens */
-    gap: 5px;
-  }
- 
-  .carpenter-image, .beetle-image, .termite-image, .bee-image, .swarmer-image {
-    width: 80px; /* Even smaller image size */
-    height: 80px;
-  }
-  .slogan {
-    font-size: 3rem; /* Further reduce font size */
-    margin-top: 425px; /* Adjust margin to fit mobile layout */
-    padding: 15px 0; /*Further reduce padding */
-  }
-  .h2 {
-    font-size: 2.3rem;
-    font-weight: 700;
-    color: #000;
-    margin-bottom: -10px;
-    margin-top: 20px; 
-  }
-  .h1 {
-    font-size: 2rem;
-    font-weight: 700;
-    color: #000;
-    margin-bottom: -20px;
-  }
-  .h3 {
-    font-size: 2rem;
-    font-weight: 700;
-    color: #000;
-    margin-bottom: -180px;
- 
-  }
-  
-  .blurb {
-    font-size: 1.5rem;
-    font-weight: 700;
-    color: #000;
-    margin-bottom: -0px;
-    
-  }
-  
-  .about-image {
-    max-width: 200px;
-    max-height: 200px;
-    margin-top: 180px;
-  }
-  .phone {
-    font-size: 2rem;
-    font-weight: 700;
-    color: #000;
-   
-    
-}
-}
-/* Responsive Styles */
 
-@media (max-width: 810px) {
- 
-  .quote-button {
-    top: 750px;
-    right: 55px;
+@media (max-width: 1024px) {
+ .quote-button {
+    top: 300px;
+    right: 20px;
     font-size: 18px;
     padding: 20px 35px;
   }
@@ -532,21 +471,35 @@
     object-fit: contain; /* Prevent cropping */
   }
   .insect-container {
-    margin-top: 975px;
+    margin-top: 1350px;
     gap: 2px;
   }
   .insect-item {
-    width: 100px; /* Compact width for small screens */
-    padding: 8px;
+    width: 95px; /* Compact width for small screens */
+    padding: 36px;
   }
-
+  .the-termites {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    /* margin: 10px; */
+    border: 2px solid #5C4033;
+    border-radius: 10px;
+    padding: 28px; 
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    background-color: #FFF;
+    /* width: 180px; Fixed width for consistency */
+    max-width: 115px; 
+    height: 180px;
+    /* gap: 10px; */
+  }
   .carpenter-image, .beetle-image, .termite-image, .bee-image {
     width: 70px; /* Even smaller image size */
     height: 70px;
   }
   .slogan {
     font-size: 1.5rem; /* Further reduce font size */
-    margin-top: 880px; /* Adjust margin to fit mobile layout */
+    margin-top: 1235px; /* Adjust margin to fit mobile layout */
     padding: 25px 0; /*Further reduce padding */
   }
   .h1 {
@@ -606,15 +559,29 @@
     object-fit: contain; /* Prevent cropping */
   }
   .insect-container {
-    margin-top: 950px;
-    gap: 2px;
+    margin-top: 1000px;
+    gap: 0px;
   }
   .insect-item {
     width: 100px; /* Compact width for small screens */
-    padding: 8px;
+    padding: 30px;
   }
-
-  .carpenter-image, .beetle-image, .termite-image, .bee-image {
+  .the-termites {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    /* margin: 10px; */
+    border: 2px solid #5C4033;
+    border-radius: 10px;
+    padding: 23px; 
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    background-color: #FFF;
+    /* width: 180px; Fixed width for consistency */
+    max-width: 100px; 
+    height: 180px;
+    /* gap: 10px; */
+  }
+  .carpenter-image, .beetle-image, .termite-image,.swarmer-image, .bee-image {
     width: 70px; /* Even smaller image size */
     height: 70px;
   }
@@ -667,10 +634,6 @@
     color: #000;
 }
 }
-  
-
-
-
 @media (max-width: 480px) {
   
   .quote-button {
@@ -689,12 +652,13 @@
     align-items: center;
     margin-top: 475px;
     flex-wrap: wrap;
+    
    
   }
   .insect-item {
     width: 100px; /* Compact width for small screens */
     height: 180px;
-    padding: 8px;
+    padding: 25px;
     font-size: 1rem;
   }
   .the-termites {
@@ -715,6 +679,7 @@
   .carpenter-image, .beetle-image, .termite-image, .swarmer-image,.bee-image {
     width: 70px; /* Even smaller image size */
     height: 70px;
+
   }
   .slogan {
     font-size: 1.5rem; /* Further reduce font size */
@@ -810,7 +775,7 @@
     /* margin: 10px; */
     border: 2px solid #5C4033;
     border-radius: 10px;
-    padding: 25px; 
+    padding: 6px; 
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
     background-color: #FFF;
     /* width: 180px; Fixed width for consistency */
@@ -897,7 +862,7 @@
     /* margin: 10px; */
     border: 2px solid #5C4033;
     border-radius: 10px;
-    padding: 25px; 
+    padding: 7px; 
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
     background-color: #FFF;
     /* width: 180px; Fixed width for consistency */
