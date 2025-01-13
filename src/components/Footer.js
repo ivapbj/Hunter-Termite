@@ -22,7 +22,7 @@ function Footer() {
               rel="noopener noreferrer"
               className="rating-link"
             >
-              Rated 5 stars on Google and Angie's Post
+              Rated 5 stars on Google and Angie's List
             </a>
           </div>
 
@@ -53,7 +53,15 @@ function Footer() {
             &copy; 2024 HUNTER TERMITE AND PEST MGMT
           </p>
           <p className="footer-powered-by">
-            &copy; powered by TheIvanaCollective
+            &copy; created by
+            <a
+              href="https://instagram.com/theivanacollective"
+              targert="blank"
+              rel="noopener noreferrer"
+              style={{ color: "white" }}
+            >
+              TheIvanaCollective
+            </a>
           </p>
         </div>
       </footer>

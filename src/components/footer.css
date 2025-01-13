@@ -91,6 +91,7 @@
 .footer-powered-by {
   font-size: 12px; /* Reduce font size */
   margin: 5px 0;
+  color:white;
 }
 
 /* Media query for mobile responsiveness */
