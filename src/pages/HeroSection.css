@@ -1,47 +1,99 @@
+/* General Styles */
+.body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
 /* Hero Section */
 .hero-section {
   position: relative;
-  min-height: auto;
-  height: 95vh;
-  width: 100%;
-  background-size: cover;
-  background-position: center;
-  display: flex;
-  flex-direction: column;
-  flex-grow: 1;
-  justify-content: flex-start;
-  align-items: center;
-  text-align: center;
-  padding: 20px;
-  box-sizing: border-box;
-  padding-top: 150px;
-  color: rgb(0, 0, 0);
-}
-/* Quote Button */
-.quote-button {
-  position: absolute;
-  top: 100px;
-  right: 350px;
-  display: inline-block;
-  background-color: #FFD700;
-  color: #000;
-  padding: 15px 25px;
-  border-radius: 0;
-  font-size: 20px;
-  font-weight: bold;
-  text-decoration: none;
-  text-align: center;
-  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-  z-index: 10;
 }
 
-.quote-button:hover {
-  background-color: #e6c200;
-  color: #333;
+.hero-image {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.hero-button {
+  position: absolute;
+  bottom: 60%;
+  right: 5%;
+  background-color: #ffd700;
+  color: #000;
+  padding: 30px 100px;
+  border-radius: 5px;
+  font-size: 20px;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+}
+
+.hero-button:hover {
+  background-color: #ffcc00;
+}
+
+/* Slogan Section */
+.slogan {
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: bold;
+  padding: 30px;
+  background-color: #5c4033;
+  color: #fff;
+}
+
+/* Insect Section */
+.insect-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.insect-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 2px solid #5c4033;
+  border-radius: 10px;
+  padding: 10px;
+  width: 300px;
+  background-color: #fff;
+}
+
+.insect-images {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.insect-image {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+}
+
+.insect-label {
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.insect-link {
+  font-size: 1rem;
+  color: #0066cc;
+  text-decoration: none;
+}
+
+.insect-link:hover {
+  color: #003399;
 }
 
 /* Modal */
-.modal {
+.modal-overlay {
   position: fixed;
   top: 0;
   left: 0;
@@ -55,858 +107,419 @@
 }
 
 .modal-content {
-  position: relative;
-  background-color: white;
-  padding: 10px;
-  gap: 20px;
-  max-width: 500px;
-  width: 100%;
+  background-color: #fff;
+  padding: 20px;
   border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
-.form-group {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
+  width: 90%;
+  max-width: 400px;
+  position: relative;
 }
 
-.close-modal {
+.modal-close {
+  background: none;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
   position: absolute;
   top: 10px;
   right: 10px;
-  font-size: 30px;
-  background: none;
-  border: none;
-  color: #000;
-  cursor: pointer;
-  transition: color 0.3s ease;
 }
 
-.close-modal:hover {
-  color: #ff0000;
-}
-/* Slogan */
-.slogan {
-  font-size: 3rem;
-  font-weight: bold;
-  margin-top: 725px;
-  margin-bottom: -100px;
-  background-color: #5C4033;
-  color: #FFF;
-  text-align: center;
-  padding: 10px 0;
-  width: 100%;
-  position: absolute;
-  box-sizing: border-box;
-}
-.h2 {
-  font-size: 2.3rem;
-  font-weight: 700;
-  color: #000;
-  margin-bottom: -10px;
-  margin-top: 20px; 
-}
-.h1 {
-  font-size: 2rem;
-  font-weight: 700;
-  color: #000;
-  margin-bottom: -20px;
-}
-.h3 {
-  font-size: 2rem;
-  font-weight: 700;
-  color: #000;
-  margin-bottom: 10px;
-}
-.hero-image {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: -1;
-}
-.blurb {
-  font-size: 1.3rem;
-  font-weight: 700;
-  color: #000;
-  margin-bottom: 0px;
-}
-/* Insect Container */
-.insect-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 800px;
-  flex-wrap: wrap;
-  width: 100%;
-}
-
-.insect-item{
+.modal-form {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 10px;
-  border: 2px solid #5C4033;
-  border-radius: 10px;
-  padding: 25px;
-  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-  background-color: #FFF;
-  width: 180px; /* Fixed width for consistency */
-  max-width: 300px; 
-  gap: 10px;
+  padding: 20px;
 }
 
-.the-termites {
+.modal-textarea,
+.modal-input {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  margin-bottom: 10px;
+}
+
+.modal-submit {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Hero Information Section */
+.hero-info {
   display: flex;
-  flex-direction: row;
-  align-items: center;
-  /* margin: 10px; */
-  border: 2px solid #5C4033;
-  border-radius: 10px;
-  padding: 20px; 
-  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-  background-color: #FFF;
-  /* width: 180px; Fixed width for consistency */
-  max-width: 300px; 
-  /* gap: 10px; */
-}
-/* Container for the images */
-
-.termite-image{
-    width: 100px; /* Consistent size */
-    height: 100px; /* Maintain aspect ratio */
-    border-radius: 50%; /* Optional: rounded corners */
-    object-fit: cover; /* Ensure images are contained properly */
-    margin: 10px;
-  
-  }
-
-.swarmer-image {
-  width: 100px; /* Consistent size */
-  height: 100px; /* Maintain aspect ratio */
-  border-radius: 50%; /* Optional: rounded corners */
-  object-fit: cover; /* Ensure images are contained properly */
-  margin: 10px;
-}
-
-.carpenter-image, .beetle-image, .bee-image {
-  width: 100px;
-  height: 100px;
-  border-radius: 50%;
-  object-fit: cover;
-  margin: 10px;
-
-}
-.insect-label {
-  font-size: 1.2rem;
-  font-weight: 100;
-  color: #000;
-}
- .termite-label {
- 
-  font-size: 1.2rem;
-  font-weight: 100;
-  color: #000;
-  
-  
-} 
-.termite-help-link {
-  font-size: 1rem;
-  color: #0066cc;
-  text-decoration: none;
-  
-}
-
-.termite-help-link:hover {
-  color: #003399; /* Darker blue on hover */
-}
-.insect-help-link {
-  font-size: 1rem;
-  color: #0066cc;
-  text-decoration: none;
-}
-
-.insect-help-link:hover {
-  color: #003399; /* Darker blue on hover */
-}
-
-/* About Section */
-.about-content {
-  display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-
+  text-align: center;
+  height: 100vh;
+  width: 100%;
+  margin: 0;
 }
 
-.about-image {
+
+
+.hero-info h2 {
+  font-size: 2.3rem;
+  margin-bottom: -10px;
+  margin-top: 20px;
+}
+
+.hero-info h1 {
+  font-size: 2rem;
+  margin-bottom: -20px;
+}
+
+.hero-info h3 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.hero-info img {
   max-width: 300px;
   height: auto;
-  margin: -10px;
   margin-top: 0px;
 }
 
-.phone {
-  font-size:2rem;
-  font-weight: 700;
-  color: #000;
- 
-}
-/* Responsive Styles */
-@media (max-width: 1650px) {
-  .quote-button {
-    top: 100px;
-    right:225px;
-    font-size: 25px;
-    padding: 15px 20px;
-  }
- 
-    .hero-image {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      position: absolute;
-      top: 0;
-      left: 0;
-      z-index: -1;
-    }
-    .insect-container {
-    margin-top: 725px;
-    gap: 2px;
-  }
-  .insect-item{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 10px;
-    border: 2px solid #5C4033;
-    border-radius: 10px;
-    padding: 38px;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-    background-color: #FFF;
-    width: 100px; /* Fixed width for consistency */
-    max-width: 110%; /* Prevent overflow on smaller screens */
-    gap: 5px;
-  }
-  .the-termites {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    /* margin: 10px; */
-    border: 2px solid #5C4033;
-    border-radius: 10px;
-    padding: 35px; 
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-    background-color: #FFF;
-    /* width: 180px; Fixed width for consistency */
-    max-width: 115px; 
-    height: 180px;
-    /* gap: 10px; */
-  }
-  .carpenter-image, .beetle-image, .termite-image, .bee-image, .swarmer-image {
-    width: 80px; /* Even smaller image size */
-    height: 80px;
-  }
-  .slogan {
-    font-size: 3rem; /* Further reduce font size */
-    margin-top: 640px; /* Adjust margin to fit mobile layout */
-    padding: 15px 0; /*Further reduce padding */
-  }
-  .h2 {
-    font-size: 2.3rem;
-    font-weight: 700;
-    color: #000;
-    margin-bottom: -10px;
-    margin-top: 20px; 
-  }
-  .h1 {
-    font-size: 2rem;
-    font-weight: 700;
-    color: #000;
-    margin-bottom: -20px;
-  }
-  .h3 {
-    font-size: 2rem;
-    font-weight: 700;
-    color: #000;
-    margin-bottom: -180px;
- 
-  }
-  
-  .blurb {
-    font-size: 1.5rem;
-    font-weight: 700;
-    color: #000;
-    margin-bottom: -0px;
-    
-  }
-  
-  .about-image {
-    max-width: 200px;
-    max-height: 200px;
-    margin-top: 180px;
-  }
-  .phone {
-    font-size: 2rem;
-    font-weight: 700;
-    color: #000;
-   
-    
-}
-}
-@media (max-width: 1440px) {
-  .quote-button {
-    top: 70px;
-    right:100px;
-    font-size: 25px;
-    padding: 15px 30px;
-  }
- 
-    .hero-image {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      position: absolute;
-      top: 0;
-      left: 0;
-      z-index: -1;
-    }
-  
-    .insect-container {
-    margin-top: 700px;
-    gap: 2px;
-  }
-  .insect-item{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 10px;
-    border: 2px solid #5C4033;
-    border-radius: 10px;
-    padding: 40px;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-    background-color: #FFF;
-    width: 100px; /* Fixed width for consistency */
-    max-width: 110%; /* Prevent overflow on smaller screens */
-    gap: 5px;
-  }
-  .the-termites {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    /* margin: 10px; */
-    border: 2px solid #5C4033;
-    border-radius: 10px;
-    padding: 35px; 
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-    background-color: #FFF;
-    /* width: 180px; Fixed width for consistency */
-    max-width: 115px; 
-    height: 180px;
-    /* gap: 10px; */
-  }
-  .carpenter-image, .beetle-image, .termite-image, .bee-image, .swarmer-image {
-    width: 80px; /* Even smaller image size */
-    height: 80px;
-  }
-  .slogan {
-    font-size: 3rem; /* Further reduce font size */
-    margin-top: 600px; /* Adjust margin to fit mobile layout */
-    padding: 15px 0; /*Further reduce padding */
-  }
-  .h2 {
-    font-size: 2.3rem;
-    font-weight: 700;
-    color: #000;
-    margin-bottom: -10px;
-    margin-top: 20px; 
-  }
-  .h1 {
-    font-size: 2rem;
-    font-weight: 700;
-    color: #000;
-    margin-bottom: -20px;
-  }
-  .h3 {
-    font-size: 2rem;
-    font-weight: 700;
-    color: #000;
-    margin-bottom: -180px;
- 
-  }
-  
-  .blurb {
-    font-size: 1.5rem;
-    font-weight: 700;
-    color: #000;
-    margin-bottom: -0px;
-    
-  }
-  
-  .about-image {
-    max-width: 200px;
-    max-height: 200px;
-    margin-top: 180px;
-  }
-  .phone {
-    font-size: 2rem;
-    font-weight: 700;
-    color: #000;
-   
-    
-}
-}
 
-@media (max-width: 1024px) {
- .quote-button {
-    top: 300px;
-    right: 20px;
-    font-size: 18px;
-    padding: 20px 35px;
-  }
-  .hero-image {
-    height: auto; /* Allow natural height to avoid distortion */
-    object-fit: contain; /* Prevent cropping */
-  }
-  .insect-container {
-    margin-top: 1350px;
-    gap: 2px;
-  }
-  .insect-item {
-    width: 95px; /* Compact width for small screens */
-    padding: 36px;
-  }
-  .the-termites {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    /* margin: 10px; */
-    border: 2px solid #5C4033;
-    border-radius: 10px;
-    padding: 28px; 
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-    background-color: #FFF;
-    /* width: 180px; Fixed width for consistency */
-    max-width: 115px; 
-    height: 180px;
-    /* gap: 10px; */
-  }
-  .carpenter-image, .beetle-image, .termite-image, .bee-image {
-    width: 70px; /* Even smaller image size */
-    height: 70px;
-  }
-  .slogan {
-    font-size: 1.5rem; /* Further reduce font size */
-    margin-top: 1235px; /* Adjust margin to fit mobile layout */
-    padding: 25px 0; /*Further reduce padding */
-  }
-  .h1 {
-    font-size: 1.8rem;
-    font-weight: 700;
-    color: #000;
-    margin-top: 600px;
-  }
-  .h3 {
+/* Media Queries for Large Screens */
+@media (min-width: 1440px) {
+  .hero-button {
+    padding: 40px 140px;
     font-size: 2rem;
-    font-weight: 700;
-    color: #000;
-    margin-bottom: 10px;
- 
+    bottom: 55%;
+    right: 3%;
   }
-  
-  .about-content {
-    flex-direction: column;
-    
+
+  .slogan {
+    font-size: 4rem;
+    padding: 50px;
   }
-  .h2 {
-    font-size: 1.9rem;
-    font-weight: 700;
-    color: #000;
-    margin-bottom: -580px;
-    margin-top: 20px; 
+
+  .insect-section {
+    gap: 60px;
   }
-  
-  .about-image {
-    max-width: 200px;
-    max-height: 200px;
-    margin-top: -10px;
-  }
-  .blurb {
-    font-size: 1.3rem;
-    font-weight: 700;
-    color: #000;
-    margin-bottom: 0px;
-    
-  } 
-  .phone {
-    font-size:1.5rem;
-    font-weight: 700;
-    color: #000;
-}
-}
-@media (max-width: 768px) {
- 
-  .quote-button {
-    top: 750px;
-    right: 55px;
-    font-size: 18px;
-    padding: 20px 35px;
-  }
-  .hero-image {
-    height: auto; /* Allow natural height to avoid distortion */
-    object-fit: contain; /* Prevent cropping */
-  }
-  .insect-container {
-    margin-top: 1000px;
-    gap: 0px;
-  }
-  .insect-item {
-    width: 100px; /* Compact width for small screens */
+
+  .insect-card {
+    width: 500px;
     padding: 30px;
   }
-  .the-termites {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    /* margin: 10px; */
-    border: 2px solid #5C4033;
-    border-radius: 10px;
-    padding: 23px; 
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-    background-color: #FFF;
-    /* width: 180px; Fixed width for consistency */
-    max-width: 100px; 
-    height: 180px;
-    /* gap: 10px; */
-  }
-  .carpenter-image, .beetle-image, .termite-image,.swarmer-image, .bee-image {
-    width: 70px; /* Even smaller image size */
-    height: 70px;
-  }
-  .slogan {
-    font-size: 1.5rem; /* Further reduce font size */
-    margin-top: 880px; /* Adjust margin to fit mobile layout */
-    padding: 25px 0; /*Further reduce padding */
-  }
-  .h1 {
-    font-size: 1.8rem;
-    font-weight: 700;
-    color: #000;
-    margin-top: 600px;
-  }
-  .h3 {
-    font-size: 2rem;
-    font-weight: 700;
-    color: #000;
-    margin-bottom: 10px;
- 
-  }
-  
-  .about-content {
-    flex-direction: column;
-    
-  }
-  .h2 {
-    font-size: 1.9rem;
-    font-weight: 700;
-    color: #000;
-    margin-bottom: -580px;
-    margin-top: 20px; 
-  }
-  
-  .about-image {
-    max-width: 200px;
-    max-height: 200px;
-    margin-top: -10px;
-  }
-  .blurb {
-    font-size: 1.3rem;
-    font-weight: 700;
-    color: #000;
-    margin-bottom: 0px;
-    
-  } 
-  .phone {
-    font-size:1.5rem;
-    font-weight: 700;
-    color: #000;
-}
-}
-@media (max-width: 480px) {
-  
-  .quote-button {
-    top: 400px;
-    right: 20px;
-    font-size: 14px;
-    padding: 6px 12px;
-  }
-  .hero-image {
-    height: auto; /* Allow natural height to avoid distortion */
-    object-fit: contain; /* Prevent cropping */
-  }
-  .insect-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 475px;
-    flex-wrap: wrap;
-    
-   
-  }
-  .insect-item {
-    width: 100px; /* Compact width for small screens */
-    height: 180px;
-    padding: 25px;
-    font-size: 1rem;
-  }
-  .the-termites {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    /* margin: 10px; */
-    border: 2px solid #5C4033;
-    border-radius: 10px;
-    padding: 25px; 
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-    background-color: #FFF;
-    /* width: 180px; Fixed width for consistency */
-    max-width: 100px; 
-    height: 180px;
-    /* gap: 10px; */
-  }
-  .carpenter-image, .beetle-image, .termite-image, .swarmer-image,.bee-image {
-    width: 70px; /* Even smaller image size */
-    height: 70px;
 
+  .insect-image {
+    width: 120px;
+    height: 120px;
   }
-  .slogan {
-    font-size: 1.5rem; /* Further reduce font size */
-    margin-top: 400px; /* Adjust margin to fit mobile layout */
-    padding: 14px 0; /*Further reduce padding */
-  }
-  .h2 {
-    font-size: 1.9rem;
-    font-weight: 700;
-    color: #000;
-    margin-bottom: -580px;
-    margin-top: 20px; 
-  }
-  .h1 {
+
+  .insect-label {
     font-size: 1.5rem;
-    font-weight: 700;
-    color: #000;
-    margin-bottom: -10px;
   }
-  .h3 {
-    font-size: 2rem;
-    font-weight: 700;
-    color: #000;
-    margin-bottom: -50px;
-    margin-top: 15px;
-  }
-  
-  .about-content {
-    flex-direction: column;
-    margin-top: 10px;
-    
-  }
-  
-  .about-image {
-    max-width: 150px;
-    max-height: 150px;
-    margin-top: 50px;
-  }
-  .blurb {
-    font-size: 1.3rem;
-    font-weight: 700;
-    color: #000;
-    margin-bottom: 0px;
-    
-  } 
-  .phone {
-    font-size:1.5rem;
-    font-weight: 700;
-    color: #000;
-}
-}
-/* Specific styling for iPhone 12 Pro (390px width) */
-@media (max-width: 390px){
-  .quote-button {
-    top: 350px;
-    right: 10px;
-    font-size: 14px;
-    padding: 6px 12px;
-  }
-  .slogan {
-    font-size: 1.5rem; /* Further reduce font size */
-    margin-top: 325px; /* Adjust margin to fit mobile layout */
-    padding: 6px 0; /*Further reduce padding */
-  }
-  .insect-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 400px;
-    flex-wrap: wrap;
-    width: 100%;
-  }
-  
-  
-  .insect-item {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin: 10px;
-  border: 2px solid #5C4033;
-  border-radius: 10px;
-  padding: 5px;
-  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-  background-color: #FFF;
-  width: 180px; /* Fixed width for consistency */
-  max-width: 300px; 
-  gap: 10px;
-  }
-  .the-termites {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    /* margin: 10px; */
-    border: 2px solid #5C4033;
-    border-radius: 10px;
-    padding: 6px; 
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-    background-color: #FFF;
-    /* width: 180px; Fixed width for consistency */
-    max-width: 250px; 
-    /* gap: 10px; */
-  }
-.about-content {
-  flex-direction: column;
-  margin-top: 10px;
-}
-.h1 {
-  font-size: 1.5rem;
-  font-weight: 700;
-  color: #000;
-  margin-bottom: -20px;
-}
-.h3 {
-  font-size: 2rem;
-  font-weight: 700;
-  color: #000;
-  margin-bottom: -40px;
-  margin-top: 20px;
-}
-.about-image {
-  max-width: 150px;
-  max-height: 150px;
-}
-.blurb {
-  font-size: 1rem;
-  font-weight: 700;
-  color: #000;
- 
-  
-} 
-.phone {
-  font-size:1.5rem;
-  font-weight: 700;
-  color: #000;
 
-  
- 
-}
-}
-@media (max-width: 320px){
-  .quote-button {
-    top: 300px;
-    right: 10px;
-    font-size: 14px;
-    padding: 6px 12px;
+  .insect-link {
+    font-size: 1.5rem;
   }
+
+  .hero-info h2{
+    font-size: 3.2rem;
+    
+  }
+  .hero-info h1{
+    font-size: 3rem;
+  }
+  .hero-info h3 {
+    font-size: 3rem;
+  }
+
+  .hero-info img {
+    max-width: 200px;
+  }
+
+  .hero-info p {
+    font-size: 1.5rem;
+    line-height: 1;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+
+  .hero-info a {
+    font-size: 2.5rem;
+  }
+}
+/* Responsive Design */
+@media (max-width: 768px) {
+  .hero-button {
+    bottom: 70%;
+    right: 5%;
+    padding: 20px 60px;
+    font-size: 16px;
+  }
+
   .slogan {
-    font-size: 1.5rem; /* Further reduce font size */
-    margin-top: 250px; /* Adjust margin to fit mobile layout */
-    padding: 6px 0; /*Further reduce padding */
+    font-size: 2rem;
+    padding: 20px;
   }
-  .insect-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 350px;
-    flex-wrap: wrap;
+
+  .insect-card {
+    width: 90%;
+  }
+
+  .hero-info h2 {
+    font-size: 2rem;
+  }
+
+  .hero-info h1,
+  .hero-info h3 {
+    font-size: 1.8rem;
+  }
+
+  .hero-info p {
+    font-size: 1rem;
+    font-weight: bold;
+  }
+
+  .hero-info a {
+    font-size: 1.8rem;
+  }
+}
+
+
+/* General Mobile Styles */
+@media (max-width: 480px) {
+  /* Body */
+  .body {
+    font-size: 14px;
+  }
+
+  /* Hero Section */
+  .hero-section {
+    position: relative;
+  }
+
+  .hero-image {
     width: 100%;
+    height: auto;
   }
-  
-  
-  .insect-item {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin: 10px;
-  border: 2px solid #5C4033;
-  border-radius: 10px;
-  padding: 5px;
-  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-  background-color: #FFF;
-  width: 180px; /* Fixed width for consistency */
-  max-width: 300px; 
-  gap: 10px;
+
+  .hero-button {
+    position: absolute;
+    bottom: 78%;
+    left: 60%;
+    padding: 8px 18px;
+    font-size: .9rem;
+    border-radius: 5px;
   }
-  .the-termites {
+
+  /* Slogan Section */
+  .slogan {
+    font-size: 1.5rem;
+    padding: 20px;
+  }
+
+  /* Insect Section */
+  .insect-section {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
-    /* margin: 10px; */
-    border: 2px solid #5C4033;
-    border-radius: 10px;
-    padding: 7px; 
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-    background-color: #FFF;
-    /* width: 180px; Fixed width for consistency */
-    max-width: 250px; 
-    /* gap: 10px; */
+    gap: 15px;
+    margin-top: 10px;
   }
-.about-content {
-  flex-direction: column;
-  margin-top: 10px;
+
+  .insect-card {
+    width: 90%;
+    padding: 15px;
+  }
+
+  .insect-images {
+    flex-wrap: wrap;
+    gap: 5px;
+    justify-content: center;
+  }
+
+  .insect-image {
+    width: 60px;
+    height: 60px;
+  }
+
+  .insect-label {
+    font-size: 0.9rem;
+  }
+
+  .insect-link {
+    font-size: 0.9rem;
+  }
+
+  /* Modal */
+  .modal-content {
+    padding: 15px;
+    width: 90%;
+  }
+
+  .modal-textarea,
+  .modal-input {
+    padding: 8px;
+    font-size: 0.9rem;
+  }
+
+  .modal-submit {
+    font-size: 1rem;
+    padding: 10px;
+  }
+
+  /* Hero Information Section */
+  .hero-info {
+    padding: 10px;
+  }
+
+  .hero-info h2{
+    font-size: 1.5rem;
+    margin-top: 20px;
+   
+    
+  }
+  .hero-info h1{
+    font-size: 2rem;
+    margin-top: 0px;
+    
+  }
+  .hero-info h3 {
+    font-size: 2rem;
+   
+    
+  }
+
+  .hero-info img {
+    max-width: 150px;
+    height: auto;
+    margin-bottom: 100px;
+    
+  }
+  .hero-info p {
+    font-size: 1rem;
+    line-height: 1;
+    margin-top: -50px;
+  }
+
 }
-.h1 {
-  font-size: 1.9rem;
-  font-weight: 700;
-  color: #000;
-  margin-bottom: -20px;
-}
-.h2 {
-  font-size: 1.3rem;
-  font-weight: 700;
-  color: #000;
-}
-.h3 {
-  font-size: 2rem;
-  font-weight: 700;
-  color: #000;
-  margin-bottom: -40px;
-  margin-top: 20px;
-}
-.about-image {
-  max-width: 150px;
-  max-height: 150px;
-}
-.blurb {
-  font-size: 1.2rem;
-  font-weight: 700;
-  color: #000;
-  margin-bottom: 0px;
-  
-} 
-.phone {
-  font-size:1.5rem;
-  font-weight: 700;
-  color: #000;
-}
+/* General Mobile Styles */
+@media (max-width: 320px) {
+  /* Body */
+  .body {
+    font-size: 14px;
+  }
+
+  /* Hero Section */
+  .hero-section {
+    position: relative;
+  }
+
+  .hero-image {
+    width: 100%;
+    height: auto;
+  }
+
+  .hero-button {
+    position: absolute;
+    bottom: 81%;
+    left: 60%;
+    padding: 8px 18px;
+    font-size: .9rem;
+    border-radius: 5px;
+  }
+
+  /* Slogan Section */
+  .slogan {
+    font-size: 1.5rem;
+    padding: 20px;
+  }
+
+  /* Insect Section */
+  .insect-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    margin-top: 10px;
+  }
+
+  .insect-card {
+    width: 90%;
+    padding: 15px;
+  }
+
+  .insect-images {
+    flex-wrap: wrap;
+    gap: 5px;
+    justify-content: center;
+  }
+
+  .insect-image {
+    width: 60px;
+    height: 60px;
+  }
+
+  .insect-label {
+    font-size: 0.9rem;
+  }
+
+  .insect-link {
+    font-size: 0.9rem;
+  }
+
+  /* Modal */
+  .modal-content {
+    padding: 15px;
+    width: 90%;
+  }
+
+  .modal-textarea,
+  .modal-input {
+    padding: 8px;
+    font-size: 0.9rem;
+  }
+
+  .modal-submit {
+    font-size: 1rem;
+    padding: 10px;
+  }
+
+  /* Hero Information Section */
+  .hero-info {
+    padding: 10px;
+  }
+
+  .hero-info h2{
+    font-size: 1.5rem;
+    margin-top: 20px;
+   
+    
+  }
+  .hero-info h1{
+    font-size: 2rem;
+    margin-top: 0px;
+    
+  }
+  .hero-info h3 {
+    font-size: 2rem;
+   
+    
+  }
+
+  .hero-info img {
+    max-width: 150px;
+    height: auto;
+    margin-bottom: 100px;
+    
+  }
+  .hero-info p {
+    font-size: 1rem;
+    line-height: 1;
+    margin-top: -50px;
+  }
+
 }
 
  

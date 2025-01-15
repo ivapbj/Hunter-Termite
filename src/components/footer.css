@@ -2,33 +2,36 @@
 .wrapper { 
   display: flex;
   flex-direction: column; /* Flexbox layout to make the footer sticky */
-  min-height: 100vh; /* Full height of the viewport */
+  min-height: 10vh; /* Full height of the viewport */
+}
+main {
+  flex: 1; /* Allow main content to grow */
 }
 
 .footer {
-  position: relative;
   display: flex;
   flex-direction: column; /* Stack content vertically */
   align-items: center;
   justify-content: center;
   width: 100%;
-  height: auto;
   background-image: url("../assets/logimage.jpg");
   background-size: cover;
   background-position: center;
-  color: white;
+  background-attachment: fixed;
+  color: rgb(72, 2, 2);
   padding: 20px; /* Adjust padding for mobile */
-  margin-top: 1000px; /* Reduce top margin for mobile */
-}
+    margin-top: auto; /* Use relative units instead of hardcoding large margins */
+  } /* Reduce top margin for mobile */
+
 
 /* Footer content container */
 .footer-content {
   display: flex;
-  align-items: center;
   justify-content: center;
   gap: 10px; /* Adjust spacing for compact view */
   flex-wrap: wrap; /* Allow wrapping */
-  max-width: 810px; /* Constrain width to screen size */
+  max-width: 90%; /* Constrain width to screen size */
+  padding: 10px;
 }
 
 /* Rating section */
@@ -95,80 +98,16 @@
 }
 
 /* Media query for mobile responsiveness */
-@media (max-width: 1440)  {
-  .wrapper{
-  display: flex;
-  flex-direction: column; /* Flexbox layout to make the footer sticky */
-  min-height: 100vh; /* Full height of the viewport */
-}
-.footer {
- padding: 0px; /* Reduce padding */
-  margin-top: 100px; /* Adjust margin */
-}
-
-.footer-content {
-  flex-direction: column; /* Stack items */
-  gap: 10px; /* Reduce spacing */
-  /* text-align: center; Center-align content */
-}
-
-.rating-section {
-  flex-direction: column; /* Stack image and text */
-  align-items: center; /* Center-align content */
-  /* gap: 5px; Adjust spacing */
-}
-
-.google-image {
-  width: 100px; /* Smaller image size */
-  
-}
-
-.rating-link {
-  font-size: 1.2rem; /* Smaller font size */
-
-}
-
-.social-icons {
-  
-  gap: 10px; /* Adjust spacing */
-}
-
-.instagram-link,
-.facebook-link {
-  font-size: 1.5rem; /* Smaller icon size */
-}
-
-.footer-texts {
-  margin-top: 10px; /* Adjust spacing */
-}
-
-.footer-copyright,
-.footer-powered-by {
-  font-size: 12px; /* Smaller font size */
-}
-}
-
 @media (max-width: 1024px) { 
-  .wrapper{
-  display: flex;
-  flex-direction: column; /* Flexbox layout to make the footer sticky */
-  min-height: 100vh; /* Full height of the viewport */
-}
-.footer {
- padding: 0px; /* Reduce padding */
-  margin-top: 1650px; /* Adjust margin */
-}
-
 .footer-content {
   flex-direction: column; /* Stack items */
-  gap: 10px; /* Reduce spacing */
-  /* text-align: center; Center-align content */
+    max-width: 90%; /* Make it adapt to the screen size */
+    padding: 10px; /* Add padding to avoid content touching edges */
+  }
 }
 
 .rating-section {
-  flex-direction: column; /* Stack image and text */
-  align-items: center; /* Center-align content */
-  /* gap: 5px; Adjust spacing */
+gap: 10px; /* Adjust spacing */
 }
 
 .google-image {
@@ -199,234 +138,32 @@
 .footer-powered-by {
   font-size: 12px; /* Smaller font size */
 }
-}
 
-@media (max-width: 780px) {
-  .wrapper { 
-    display: flex;
-    flex-direction: column; /* Flexbox layout to make the footer sticky */
-    min-height: 100vh; /* Full height of the viewport */
-  }
+@media (max-width: 480px) {
   .footer {
-   padding: 0px; /* Reduce padding */
-    margin-top: 1310px; /* Adjust margin */
-  }
-
-  .footer-content {
-    flex-direction: column; /* Stack items */
-    gap: 10px; /* Reduce spacing */
-    /* text-align: center; Center-align content */
-  }
-
-  .rating-section {
-    flex-direction: column; /* Stack image and text */
-    align-items: center; /* Center-align content */
-    /* gap: 5px; Adjust spacing */
-  }
-
-  .google-image {
-    width: 100px; /* Smaller image size */
-    
-  }
-
-  .rating-link {
-    font-size: 1.2rem; /* Smaller font size */
+    padding: 15px;
+    background-size: absolute; /* Adjust background for smaller viewports */
  
   }
 
-  .social-icons {
-    
-    gap: 10px; /* Adjust spacing */
-  }
-
-  .instagram-link,
-  .facebook-link {
-    font-size: 1.5rem; /* Smaller icon size */
-  }
-
-  .footer-texts {
-    margin-top: 10px; /* Adjust spacing */
-  }
-
-  .footer-copyright,
-  .footer-powered-by {
-    font-size: 12px; /* Smaller font size */
-  }
-}
-@media (max-width: 480px){
-  .wrapper { 
-    display: flex;
-    flex-direction: column; /* Flexbox layout to make the footer sticky */
-    min-height: 100vh; /* Full height of the viewport */
-  }
-  .footer {
-    margin-top: 1250px;  
-    padding-bottom: 10px;
-  }
-
   .footer-content {
-    gap: 8px;
-  }
-
-  .google-image {
-    width: 120px;
-    align-self: center;
-    margin-left: 5px;
-  }
-
-  .rating-link {
-    font-size: 1rem;
-    margin-top: -10px;
-  }
-
-  .social-icons {
-    gap: 8px;
-  }
-
-  .instagram-link,
-  .facebook-link {
-    font-size: 2rem;
-    margin-top: 0px;
-  }
-
-  .footer-copyright,
-  .footer-powered-by {
-    font-size: 9px;
-    margin-top: -5px;  }
-    
-} 
-
-@media (max-width: 390px) {
-/* Wrapper styles remain the same */
-.wrapper { 
-  display: flex;
-  flex-direction: column; /* Flexbox layout to make the footer sticky */
-  min-height: 100vh; /* Full height of the viewport */
-}
-
-.footer {
-  position: relative;
-  display: flex;
-  flex-direction: column; /* Stack content vertically */
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  height: auto;
-  background-image: url("../assets/logimage.jpg");
-  background-size: cover;
-  background-position: center;
-  color: white;
-  padding: 20px; /* Adjust padding for mobile */
-  margin-top: 500px; /* Reduce top margin for mobile */
-}
-
-/* Footer content container */
-.footer-content {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 10px; /* Adjust spacing for compact view */
-  flex-wrap: wrap; /* Allow wrapping */
-  max-width: 810px; /* Constrain width to screen size */
-}
-
-/* Rating section */
-.rating-section {
-  display: flex;
-  align-items: center;
-  gap: 5px; /* Reduce spacing */
-  flex-wrap: wrap;
-  text-align: center;
-}
-
-.google-image {
-  width: 100px; /* Adjust image size for smaller screens */
-  height: auto;
-  margin: 0; /* Center align */
-}
-
-.rating-link {
-  font-size: 1.4rem; /* Reduce font size for mobile */
-  color: white;
-  text-decoration: none;
-  font-weight: bold;
-  text-align: center;
-}
-
-.rating-link:hover {
-  color: #f90a0a; /* Highlight on hover */
-}
-
-/* Social icons */
-.social-icons {
-  display: flex;
-  justify-content: center;
-  gap: 8px; /* Reduce spacing */
-  margin-top: 10px; /* Adjust spacing */
-}
-
-.instagram-link,
-.facebook-link {
-  font-size: 1.6rem; /* Adjust size for mobile */
-  color: white;
-  transition: color 0.3s;
-}
-
-.instagram-link:hover {
-  color: #ff0066;
-}
-
-.facebook-link:hover {
-  color: #1409e2;
-}
-
-/* Footer text */
-.footer-texts {
-  text-align: center;
-  margin-top: 10px; /* Adjust spacing */
-}
-
-.footer-copyright,
-.footer-powered-by {
-  font-size: 12px; /* Reduce font size */
-  margin: 5px 0;
-}
-
-
-
-  .footer {
-    margin-top: 1425px;
-    padding: 0px;
-    
-  }
-
-  .footer-content {
-    gap: 8px;
-  }
-
-  .google-image {
-    width: 80px;
-    align-self: center;
-    margin-left: 5px;
+    gap: 5px;
   }
 
   .rating-link {
     font-size: 0.9rem;
-    margin-top: -10px;
   }
 
   .social-icons {
-    gap: 8px;
+    gap: 5px;
   }
 
   .instagram-link,
   .facebook-link {
-    font-size: 1rem;
-    margin-top: -7px;
+    font-size: 1.2rem;
   }
 
-  .footer-copyright,
-  .footer-powered-by {
-    font-size: 9px;
-    margin-top: -5px;  }
+  .footer-texts {
+    margin-top: 5px;
+  }
 }
