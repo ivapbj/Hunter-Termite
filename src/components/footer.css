@@ -173,3 +173,30 @@ gap: 10px; /* Adjust spacing */
     margin-top: 5px;
   }
 }
+@media (max-width: 320px) {
+  .footer {
+    padding: 8px; /* Further reduce padding for very small screens */
+  }
+
+  .footer-content {
+    gap: 5px; /* Adjust spacing to fit within smaller viewports */
+  }
+
+  .rating-link {
+    font-size: 0.7rem; /* Adjust text size for readability */
+  }
+
+  .social-icons {
+    gap: 6px; /* Tighten spacing between icons */
+  }
+
+  .instagram-link,
+  .facebook-link {
+    font-size: 0.9rem; /* Make icons smaller to fit */
+  }
+
+  .footer-texts {
+    margin-top: 6px; /* Adjust margin for better layout */
+    font-size: 0.8rem; /* Scale down text */
+  }
+}
