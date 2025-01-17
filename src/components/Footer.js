@@ -7,6 +7,7 @@ import "../components/footer.css"; // Ensure the CSS is correctly imported
 function Footer() {
   return (
     <div class="wrapper">
+      <div class="push"></div>
       <footer className="footer">
         <div className="footer-content">
           {/* Rating Section */}

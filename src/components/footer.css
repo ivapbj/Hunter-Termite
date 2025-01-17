@@ -1,8 +1,14 @@
 /* Wrapper styles remain the same */
-.wrapper { 
-  display: flex;
-  flex-direction: column; /* Flexbox layout to make the footer sticky */
-  min-height: 10vh; /* Full height of the viewport */
+
+.wrapper {
+  min-height: 100%;
+  height: auto !important;
+  height: 100%;
+  width: 100%;
+  margin: 0 auto -142px; /* the bottom margin is the negative value of the footer's height */
+}
+.footer, .push {
+  height: 142px; /* .push must be the same height as .footer */
 }
 main {
   flex: 1; /* Allow main content to grow */
