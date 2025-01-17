@@ -20,15 +20,15 @@ main {
   background-attachment: fixed;
   color: rgb(72, 2, 2);
   padding: 20px; /* Adjust padding for mobile */
-    margin-top: auto; /* Use relative units instead of hardcoding large margins */
-  } /* Reduce top margin for mobile */
+  margin-top: 30%;
+  }
 
 
 /* Footer content container */
 .footer-content {
   display: flex;
   justify-content: center;
-  gap: 10px; /* Adjust spacing for compact view */
+  gap: 10px; /* Adjust spacing for compact view *
   flex-wrap: wrap; /* Allow wrapping */
   max-width: 90%; /* Constrain width to screen size */
   padding: 10px;
