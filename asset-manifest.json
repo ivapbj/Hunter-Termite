@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/static/css/main.18325157.css",
+    "main.css": "/static/css/main.217bf195.css",
     "main.js": "/static/js/main.0cecb8b9.js",
     "static/media/termiteimage.jpg": "/static/media/termiteimage.4920e5504d8198b12da0.jpg",
     "static/media/Herosectionimage.jpg": "/static/media/Herosectionimage.fc42ba3db92df5a887e8.jpg",
@@ -12,11 +12,11 @@
     "static/media/googleimage.png": "/static/media/googleimage.e1cf70f337c5f9891148.png",
     "static/media/termiteswarmer.png": "/static/media/termiteswarmer.9091298cb4f620377265.png",
     "index.html": "/index.html",
-    "main.18325157.css.map": "/static/css/main.18325157.css.map",
+    "main.217bf195.css.map": "/static/css/main.217bf195.css.map",
     "main.0cecb8b9.js.map": "/static/js/main.0cecb8b9.js.map"
   },
   "entrypoints": [
-    "static/css/main.18325157.css",
+    "static/css/main.217bf195.css",
     "static/js/main.0cecb8b9.js"
   ]
 }
