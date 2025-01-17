@@ -3,11 +3,11 @@ import { FaInstagram } from "react-icons/fa";
 import { FaFacebook } from "react-icons/fa";
 import GoogleImage from "../assets/googleimage.png";
 import "../components/footer.css"; // Ensure the CSS is correctly imported
+import "bootstrap/dist/css/bootstrap.min.css";
 
 function Footer() {
   return (
     <div class="wrapper">
-      <div class="push"></div>
       <footer className="footer">
         <div className="footer-content">
           {/* Rating Section */}
